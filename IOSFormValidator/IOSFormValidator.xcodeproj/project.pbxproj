@@ -7,74 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C7F52EE1E40B55200613494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F52ED1E40B55200613494 /* main.m */; };
-		3C7F52F11E40B55200613494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F52F01E40B55200613494 /* AppDelegate.m */; };
-		3C7F52F41E40B55200613494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F52F31E40B55200613494 /* ViewController.m */; };
-		3C7F52F71E40B55200613494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F52F51E40B55200613494 /* Main.storyboard */; };
-		3C7F52F91E40B55200613494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F52F81E40B55200613494 /* Assets.xcassets */; };
-		3C7F52FC1E40B55200613494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F52FA1E40B55200613494 /* LaunchScreen.storyboard */; };
-		3C7F53071E40B55200613494 /* IOSFormValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53061E40B55200613494 /* IOSFormValidatorTests.m */; };
-		3C7F53121E40B55200613494 /* IOSFormValidatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53111E40B55200613494 /* IOSFormValidatorUITests.m */; };
-		3C7F53251E40BEAA00613494 /* EmainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53241E40BEAA00613494 /* EmainView.m */; };
-		3C7F53281E40C5B200613494 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53271E40C5B200613494 /* PasswordView.m */; };
+		09D50FE61E40F5A0000EBA90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FE51E40F5A0000EBA90 /* main.m */; };
+		09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FE81E40F5A0000EBA90 /* AppDelegate.m */; };
+		09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FEB1E40F5A0000EBA90 /* ViewController.m */; };
+		09D50FEF1E40F5A0000EBA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D50FED1E40F5A0000EBA90 /* Main.storyboard */; };
+		09D50FF11E40F5A0000EBA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D50FF01E40F5A0000EBA90 /* Assets.xcassets */; };
+		09D50FF41E40F5A0000EBA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */; };
+		09D50FFF1E40F5A0000EBA90 /* IOSFormValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FFE1E40F5A0000EBA90 /* IOSFormValidatorTests.m */; };
+		09D5100A1E40F5A0000EBA90 /* IOSFormValidatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */; };
+		09D510191E40F5CD000EBA90 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510181E40F5CD000EBA90 /* PasswordView.m */; settings = {ASSET_TAGS = (); }; };
+		09D5101A1E40F5CD000EBA90 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510181E40F5CD000EBA90 /* PasswordView.m */; settings = {ASSET_TAGS = (); }; };
+		09D5101D1E40F5D7000EBA90 /* EmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5101C1E40F5D7000EBA90 /* EmailView.m */; settings = {ASSET_TAGS = (); }; };
+		09D5101E1E40F5D7000EBA90 /* EmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5101C1E40F5D7000EBA90 /* EmailView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C7F53031E40B55200613494 /* PBXContainerItemProxy */ = {
+		09D50FFB1E40F5A0000EBA90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3C7F52E11E40B55200613494 /* Project object */;
+			containerPortal = 09D50FD91E40F5A0000EBA90 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C7F52E81E40B55200613494;
+			remoteGlobalIDString = 09D50FE01E40F5A0000EBA90;
 			remoteInfo = IOSFormValidator;
 		};
-		3C7F530E1E40B55200613494 /* PBXContainerItemProxy */ = {
+		09D510061E40F5A0000EBA90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3C7F52E11E40B55200613494 /* Project object */;
+			containerPortal = 09D50FD91E40F5A0000EBA90 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3C7F52E81E40B55200613494;
+			remoteGlobalIDString = 09D50FE01E40F5A0000EBA90;
 			remoteInfo = IOSFormValidator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C7F52E91E40B55200613494 /* IOSFormValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSFormValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C7F52ED1E40B55200613494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C7F52EF1E40B55200613494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3C7F52F01E40B55200613494 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3C7F52F21E40B55200613494 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3C7F52F31E40B55200613494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3C7F52F61E40B55200613494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3C7F52F81E40B55200613494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C7F52FB1E40B55200613494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3C7F52FD1E40B55200613494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C7F53021E40B55200613494 /* IOSFormValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C7F53061E40B55200613494 /* IOSFormValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorTests.m; sourceTree = "<group>"; };
-		3C7F53081E40B55200613494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C7F530D1E40B55200613494 /* IOSFormValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C7F53111E40B55200613494 /* IOSFormValidatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorUITests.m; sourceTree = "<group>"; };
-		3C7F53131E40B55200613494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C7F53231E40BEAA00613494 /* EmainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmainView.h; sourceTree = "<group>"; };
-		3C7F53241E40BEAA00613494 /* EmainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmainView.m; sourceTree = "<group>"; };
-		3C7F53261E40C5B200613494 /* PasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
-		3C7F53271E40C5B200613494 /* PasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
+		09D50FE11E40F5A0000EBA90 /* IOSFormValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSFormValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D50FE51E40F5A0000EBA90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09D50FE71E40F5A0000EBA90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09D50FE81E40F5A0000EBA90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09D50FEA1E40F5A0000EBA90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09D50FEB1E40F5A0000EBA90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09D50FEE1E40F5A0000EBA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09D50FF01E40F5A0000EBA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09D50FF31E40F5A0000EBA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09D50FF51E40F5A0000EBA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D50FFA1E40F5A0000EBA90 /* IOSFormValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D50FFE1E40F5A0000EBA90 /* IOSFormValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorTests.m; sourceTree = "<group>"; };
+		09D510001E40F5A0000EBA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D510051E40F5A0000EBA90 /* IOSFormValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorUITests.m; sourceTree = "<group>"; };
+		09D5100B1E40F5A0000EBA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D510171E40F5CD000EBA90 /* PasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
+		09D510181E40F5CD000EBA90 /* PasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
+		09D5101B1E40F5D7000EBA90 /* EmailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailView.h; sourceTree = "<group>"; };
+		09D5101C1E40F5D7000EBA90 /* EmailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3C7F52E61E40B55200613494 /* Frameworks */ = {
+		09D50FDE1E40F5A0000EBA90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F52FF1E40B55200613494 /* Frameworks */ = {
+		09D50FF71E40F5A0000EBA90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F530A1E40B55200613494 /* Frameworks */ = {
+		09D510021E40F5A0000EBA90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,90 +86,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C7F52E01E40B55200613494 = {
+		09D50FD81E40F5A0000EBA90 = {
 			isa = PBXGroup;
 			children = (
-				3C7F52EB1E40B55200613494 /* IOSFormValidator */,
-				3C7F53051E40B55200613494 /* IOSFormValidatorTests */,
-				3C7F53101E40B55200613494 /* IOSFormValidatorUITests */,
-				3C7F52EA1E40B55200613494 /* Products */,
+				09D5101B1E40F5D7000EBA90 /* EmailView.h */,
+				09D5101C1E40F5D7000EBA90 /* EmailView.m */,
+				09D510171E40F5CD000EBA90 /* PasswordView.h */,
+				09D510181E40F5CD000EBA90 /* PasswordView.m */,
+				09D50FE31E40F5A0000EBA90 /* IOSFormValidator */,
+				09D50FFD1E40F5A0000EBA90 /* IOSFormValidatorTests */,
+				09D510081E40F5A0000EBA90 /* IOSFormValidatorUITests */,
+				09D50FE21E40F5A0000EBA90 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3C7F52EA1E40B55200613494 /* Products */ = {
+		09D50FE21E40F5A0000EBA90 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F52E91E40B55200613494 /* IOSFormValidator.app */,
-				3C7F53021E40B55200613494 /* IOSFormValidatorTests.xctest */,
-				3C7F530D1E40B55200613494 /* IOSFormValidatorUITests.xctest */,
+				09D50FE11E40F5A0000EBA90 /* IOSFormValidator.app */,
+				09D50FFA1E40F5A0000EBA90 /* IOSFormValidatorTests.xctest */,
+				09D510051E40F5A0000EBA90 /* IOSFormValidatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3C7F52EB1E40B55200613494 /* IOSFormValidator */ = {
+		09D50FE31E40F5A0000EBA90 /* IOSFormValidator */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F531F1E40BE6500613494 /* FormValidator */,
-				3C7F52EF1E40B55200613494 /* AppDelegate.h */,
-				3C7F52F01E40B55200613494 /* AppDelegate.m */,
-				3C7F52F21E40B55200613494 /* ViewController.h */,
-				3C7F52F31E40B55200613494 /* ViewController.m */,
-				3C7F52F51E40B55200613494 /* Main.storyboard */,
-				3C7F52F81E40B55200613494 /* Assets.xcassets */,
-				3C7F52FA1E40B55200613494 /* LaunchScreen.storyboard */,
-				3C7F52FD1E40B55200613494 /* Info.plist */,
-				3C7F52EC1E40B55200613494 /* Supporting Files */,
+				09D50FE71E40F5A0000EBA90 /* AppDelegate.h */,
+				09D50FE81E40F5A0000EBA90 /* AppDelegate.m */,
+				09D50FEA1E40F5A0000EBA90 /* ViewController.h */,
+				09D50FEB1E40F5A0000EBA90 /* ViewController.m */,
+				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
+				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
+				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
+				09D50FF51E40F5A0000EBA90 /* Info.plist */,
+				09D50FE41E40F5A0000EBA90 /* Supporting Files */,
 			);
 			path = IOSFormValidator;
 			sourceTree = "<group>";
 		};
-		3C7F52EC1E40B55200613494 /* Supporting Files */ = {
+		09D50FE41E40F5A0000EBA90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F52ED1E40B55200613494 /* main.m */,
+				09D50FE51E40F5A0000EBA90 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3C7F53051E40B55200613494 /* IOSFormValidatorTests */ = {
+		09D50FFD1E40F5A0000EBA90 /* IOSFormValidatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F53061E40B55200613494 /* IOSFormValidatorTests.m */,
-				3C7F53081E40B55200613494 /* Info.plist */,
+				09D50FFE1E40F5A0000EBA90 /* IOSFormValidatorTests.m */,
+				09D510001E40F5A0000EBA90 /* Info.plist */,
 			);
 			path = IOSFormValidatorTests;
 			sourceTree = "<group>";
 		};
-		3C7F53101E40B55200613494 /* IOSFormValidatorUITests */ = {
+		09D510081E40F5A0000EBA90 /* IOSFormValidatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3C7F53111E40B55200613494 /* IOSFormValidatorUITests.m */,
-				3C7F53131E40B55200613494 /* Info.plist */,
+				09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */,
+				09D5100B1E40F5A0000EBA90 /* Info.plist */,
 			);
 			path = IOSFormValidatorUITests;
-			sourceTree = "<group>";
-		};
-		3C7F531F1E40BE6500613494 /* FormValidator */ = {
-			isa = PBXGroup;
-			children = (
-				3C7F53231E40BEAA00613494 /* EmainView.h */,
-				3C7F53241E40BEAA00613494 /* EmainView.m */,
-				3C7F53261E40C5B200613494 /* PasswordView.h */,
-				3C7F53271E40C5B200613494 /* PasswordView.m */,
-			);
-			name = FormValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3C7F52E81E40B55200613494 /* IOSFormValidator */ = {
+		09D50FE01E40F5A0000EBA90 /* IOSFormValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C7F53161E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidator" */;
+			buildConfigurationList = 09D5100E1E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidator" */;
 			buildPhases = (
-				3C7F52E51E40B55200613494 /* Sources */,
-				3C7F52E61E40B55200613494 /* Frameworks */,
-				3C7F52E71E40B55200613494 /* Resources */,
+				09D50FDD1E40F5A0000EBA90 /* Sources */,
+				09D50FDE1E40F5A0000EBA90 /* Frameworks */,
+				09D50FDF1E40F5A0000EBA90 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -175,72 +169,70 @@
 			);
 			name = IOSFormValidator;
 			productName = IOSFormValidator;
-			productReference = 3C7F52E91E40B55200613494 /* IOSFormValidator.app */;
+			productReference = 09D50FE11E40F5A0000EBA90 /* IOSFormValidator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3C7F53011E40B55200613494 /* IOSFormValidatorTests */ = {
+		09D50FF91E40F5A0000EBA90 /* IOSFormValidatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C7F53191E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */;
+			buildConfigurationList = 09D510111E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */;
 			buildPhases = (
-				3C7F52FE1E40B55200613494 /* Sources */,
-				3C7F52FF1E40B55200613494 /* Frameworks */,
-				3C7F53001E40B55200613494 /* Resources */,
+				09D50FF61E40F5A0000EBA90 /* Sources */,
+				09D50FF71E40F5A0000EBA90 /* Frameworks */,
+				09D50FF81E40F5A0000EBA90 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3C7F53041E40B55200613494 /* PBXTargetDependency */,
+				09D50FFC1E40F5A0000EBA90 /* PBXTargetDependency */,
 			);
 			name = IOSFormValidatorTests;
 			productName = IOSFormValidatorTests;
-			productReference = 3C7F53021E40B55200613494 /* IOSFormValidatorTests.xctest */;
+			productReference = 09D50FFA1E40F5A0000EBA90 /* IOSFormValidatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3C7F530C1E40B55200613494 /* IOSFormValidatorUITests */ = {
+		09D510041E40F5A0000EBA90 /* IOSFormValidatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C7F531C1E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */;
+			buildConfigurationList = 09D510141E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */;
 			buildPhases = (
-				3C7F53091E40B55200613494 /* Sources */,
-				3C7F530A1E40B55200613494 /* Frameworks */,
-				3C7F530B1E40B55200613494 /* Resources */,
+				09D510011E40F5A0000EBA90 /* Sources */,
+				09D510021E40F5A0000EBA90 /* Frameworks */,
+				09D510031E40F5A0000EBA90 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3C7F530F1E40B55200613494 /* PBXTargetDependency */,
+				09D510071E40F5A0000EBA90 /* PBXTargetDependency */,
 			);
 			name = IOSFormValidatorUITests;
 			productName = IOSFormValidatorUITests;
-			productReference = 3C7F530D1E40B55200613494 /* IOSFormValidatorUITests.xctest */;
+			productReference = 09D510051E40F5A0000EBA90 /* IOSFormValidatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3C7F52E11E40B55200613494 /* Project object */ = {
+		09D50FD91E40F5A0000EBA90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = com.byjeevan.ios.formvalidator;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = byjeevan;
 				TargetAttributes = {
-					3C7F52E81E40B55200613494 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 77Z62D8Y73;
-						ProvisioningStyle = Automatic;
+					09D50FE01E40F5A0000EBA90 = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
-					3C7F53011E40B55200613494 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3C7F52E81E40B55200613494;
+					09D50FF91E40F5A0000EBA90 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = X3C29CZLQA;
+						TestTargetID = 09D50FE01E40F5A0000EBA90;
 					};
-					3C7F530C1E40B55200613494 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3C7F52E81E40B55200613494;
+					09D510041E40F5A0000EBA90 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = X3C29CZLQA;
+						TestTargetID = 09D50FE01E40F5A0000EBA90;
 					};
 				};
 			};
-			buildConfigurationList = 3C7F52E41E40B55200613494 /* Build configuration list for PBXProject "IOSFormValidator" */;
+			buildConfigurationList = 09D50FDC1E40F5A0000EBA90 /* Build configuration list for PBXProject "IOSFormValidator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,37 +240,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 3C7F52E01E40B55200613494;
-			productRefGroup = 3C7F52EA1E40B55200613494 /* Products */;
+			mainGroup = 09D50FD81E40F5A0000EBA90;
+			productRefGroup = 09D50FE21E40F5A0000EBA90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3C7F52E81E40B55200613494 /* IOSFormValidator */,
-				3C7F53011E40B55200613494 /* IOSFormValidatorTests */,
-				3C7F530C1E40B55200613494 /* IOSFormValidatorUITests */,
+				09D50FE01E40F5A0000EBA90 /* IOSFormValidator */,
+				09D50FF91E40F5A0000EBA90 /* IOSFormValidatorTests */,
+				09D510041E40F5A0000EBA90 /* IOSFormValidatorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C7F52E71E40B55200613494 /* Resources */ = {
+		09D50FDF1E40F5A0000EBA90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7F52FC1E40B55200613494 /* LaunchScreen.storyboard in Resources */,
-				3C7F52F91E40B55200613494 /* Assets.xcassets in Resources */,
-				3C7F52F71E40B55200613494 /* Main.storyboard in Resources */,
+				09D50FF41E40F5A0000EBA90 /* LaunchScreen.storyboard in Resources */,
+				09D50FF11E40F5A0000EBA90 /* Assets.xcassets in Resources */,
+				09D50FEF1E40F5A0000EBA90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F53001E40B55200613494 /* Resources */ = {
+		09D50FF81E40F5A0000EBA90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F530B1E40B55200613494 /* Resources */ = {
+		09D510031E40F5A0000EBA90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,62 +280,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3C7F52E51E40B55200613494 /* Sources */ = {
+		09D50FDD1E40F5A0000EBA90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7F52F41E40B55200613494 /* ViewController.m in Sources */,
-				3C7F52F11E40B55200613494 /* AppDelegate.m in Sources */,
-				3C7F52EE1E40B55200613494 /* main.m in Sources */,
-				3C7F53281E40C5B200613494 /* PasswordView.m in Sources */,
-				3C7F53251E40BEAA00613494 /* EmainView.m in Sources */,
+				09D5101D1E40F5D7000EBA90 /* EmailView.m in Sources */,
+				09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */,
+				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
+				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
+				09D510191E40F5CD000EBA90 /* PasswordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F52FE1E40B55200613494 /* Sources */ = {
+		09D50FF61E40F5A0000EBA90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7F53071E40B55200613494 /* IOSFormValidatorTests.m in Sources */,
+				09D50FFF1E40F5A0000EBA90 /* IOSFormValidatorTests.m in Sources */,
+				09D5101A1E40F5CD000EBA90 /* PasswordView.m in Sources */,
+				09D5101E1E40F5D7000EBA90 /* EmailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7F53091E40B55200613494 /* Sources */ = {
+		09D510011E40F5A0000EBA90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7F53121E40B55200613494 /* IOSFormValidatorUITests.m in Sources */,
+				09D5100A1E40F5A0000EBA90 /* IOSFormValidatorUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C7F53041E40B55200613494 /* PBXTargetDependency */ = {
+		09D50FFC1E40F5A0000EBA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C7F52E81E40B55200613494 /* IOSFormValidator */;
-			targetProxy = 3C7F53031E40B55200613494 /* PBXContainerItemProxy */;
+			target = 09D50FE01E40F5A0000EBA90 /* IOSFormValidator */;
+			targetProxy = 09D50FFB1E40F5A0000EBA90 /* PBXContainerItemProxy */;
 		};
-		3C7F530F1E40B55200613494 /* PBXTargetDependency */ = {
+		09D510071E40F5A0000EBA90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C7F52E81E40B55200613494 /* IOSFormValidator */;
-			targetProxy = 3C7F530E1E40B55200613494 /* PBXContainerItemProxy */;
+			target = 09D50FE01E40F5A0000EBA90 /* IOSFormValidator */;
+			targetProxy = 09D510061E40F5A0000EBA90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3C7F52F51E40B55200613494 /* Main.storyboard */ = {
+		09D50FED1E40F5A0000EBA90 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C7F52F61E40B55200613494 /* Base */,
+				09D50FEE1E40F5A0000EBA90 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3C7F52FA1E40B55200613494 /* LaunchScreen.storyboard */ = {
+		09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C7F52FB1E40B55200613494 /* Base */,
+				09D50FF31E40F5A0000EBA90 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -351,11 +345,10 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3C7F53141E40B55200613494 /* Debug */ = {
+		09D5100C1E40F5A0000EBA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -363,13 +356,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -391,19 +381,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3C7F53151E40B55200613494 /* Release */ = {
+		09D5100D1E40F5A0000EBA90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -411,13 +399,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -433,19 +418,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		3C7F53171E40B55200613494 /* Debug */ = {
+		09D5100F1E40F5A0000EBA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77Z62D8Y73;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,11 +438,11 @@
 			};
 			name = Debug;
 		};
-		3C7F53181E40B55200613494 /* Release */ = {
+		09D510101E40F5A0000EBA90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77Z62D8Y73;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,7 +451,7 @@
 			};
 			name = Release;
 		};
-		3C7F531A1E40B55200613494 /* Debug */ = {
+		09D510121E40F5A0000EBA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,7 +463,7 @@
 			};
 			name = Debug;
 		};
-		3C7F531B1E40B55200613494 /* Release */ = {
+		09D510131E40F5A0000EBA90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,7 +475,7 @@
 			};
 			name = Release;
 		};
-		3C7F531D1E40B55200613494 /* Debug */ = {
+		09D510151E40F5A0000EBA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = IOSFormValidatorUITests/Info.plist;
@@ -499,10 +483,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSFormValidatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = IOSFormValidator;
+				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		3C7F531E1E40B55200613494 /* Release */ = {
+		09D510161E40F5A0000EBA90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = IOSFormValidatorUITests/Info.plist;
@@ -510,49 +495,50 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSFormValidatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = IOSFormValidator;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C7F52E41E40B55200613494 /* Build configuration list for PBXProject "IOSFormValidator" */ = {
+		09D50FDC1E40F5A0000EBA90 /* Build configuration list for PBXProject "IOSFormValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C7F53141E40B55200613494 /* Debug */,
-				3C7F53151E40B55200613494 /* Release */,
+				09D5100C1E40F5A0000EBA90 /* Debug */,
+				09D5100D1E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C7F53161E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidator" */ = {
+		09D5100E1E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C7F53171E40B55200613494 /* Debug */,
-				3C7F53181E40B55200613494 /* Release */,
+				09D5100F1E40F5A0000EBA90 /* Debug */,
+				09D510101E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C7F53191E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */ = {
+		09D510111E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C7F531A1E40B55200613494 /* Debug */,
-				3C7F531B1E40B55200613494 /* Release */,
+				09D510121E40F5A0000EBA90 /* Debug */,
+				09D510131E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C7F531C1E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */ = {
+		09D510141E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C7F531D1E40B55200613494 /* Debug */,
-				3C7F531E1E40B55200613494 /* Release */,
+				09D510151E40F5A0000EBA90 /* Debug */,
+				09D510161E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3C7F52E11E40B55200613494 /* Project object */;
+	rootObject = 09D50FD91E40F5A0000EBA90 /* Project object */;
 }

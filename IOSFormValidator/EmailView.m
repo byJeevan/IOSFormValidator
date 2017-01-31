@@ -6,9 +6,9 @@
 //  Copyright © 2017 com.byjeevan.ios.formvalidator. All rights reserved.
 //
 
-#import "EmainView.h"
+#import "EmailView.h"
 
-@implementation EmainView
+@implementation EmailView
 
 
 -(id)initWithCoder:(NSCoder *)coder {
