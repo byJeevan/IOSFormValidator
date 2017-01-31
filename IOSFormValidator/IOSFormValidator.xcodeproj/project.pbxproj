@@ -15,6 +15,8 @@
 		3C7F52FC1E40B55200613494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7F52FA1E40B55200613494 /* LaunchScreen.storyboard */; };
 		3C7F53071E40B55200613494 /* IOSFormValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53061E40B55200613494 /* IOSFormValidatorTests.m */; };
 		3C7F53121E40B55200613494 /* IOSFormValidatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53111E40B55200613494 /* IOSFormValidatorUITests.m */; };
+		3C7F53251E40BEAA00613494 /* EmainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53241E40BEAA00613494 /* EmainView.m */; };
+		3C7F53281E40C5B200613494 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F53271E40C5B200613494 /* PasswordView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3C7F530D1E40B55200613494 /* IOSFormValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7F53111E40B55200613494 /* IOSFormValidatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorUITests.m; sourceTree = "<group>"; };
 		3C7F53131E40B55200613494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7F53231E40BEAA00613494 /* EmainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmainView.h; sourceTree = "<group>"; };
+		3C7F53241E40BEAA00613494 /* EmainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmainView.m; sourceTree = "<group>"; };
+		3C7F53261E40C5B200613494 /* PasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordView.h; sourceTree = "<group>"; };
+		3C7F53271E40C5B200613494 /* PasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		3C7F52EB1E40B55200613494 /* IOSFormValidator */ = {
 			isa = PBXGroup;
 			children = (
+				3C7F531F1E40BE6500613494 /* FormValidator */,
 				3C7F52EF1E40B55200613494 /* AppDelegate.h */,
 				3C7F52F01E40B55200613494 /* AppDelegate.m */,
 				3C7F52F21E40B55200613494 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				3C7F53131E40B55200613494 /* Info.plist */,
 			);
 			path = IOSFormValidatorUITests;
+			sourceTree = "<group>";
+		};
+		3C7F531F1E40BE6500613494 /* FormValidator */ = {
+			isa = PBXGroup;
+			children = (
+				3C7F53231E40BEAA00613494 /* EmainView.h */,
+				3C7F53241E40BEAA00613494 /* EmainView.m */,
+				3C7F53261E40C5B200613494 /* PasswordView.h */,
+				3C7F53271E40C5B200613494 /* PasswordView.m */,
+			);
+			name = FormValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					3C7F52E81E40B55200613494 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 77Z62D8Y73;
 						ProvisioningStyle = Automatic;
 					};
 					3C7F53011E40B55200613494 = {
@@ -276,6 +295,8 @@
 				3C7F52F41E40B55200613494 /* ViewController.m in Sources */,
 				3C7F52F11E40B55200613494 /* AppDelegate.m in Sources */,
 				3C7F52EE1E40B55200613494 /* main.m in Sources */,
+				3C7F53281E40C5B200613494 /* PasswordView.m in Sources */,
+				3C7F53251E40BEAA00613494 /* EmainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSFormValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,8 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSFormValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +532,7 @@
 				3C7F53181E40B55200613494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7F53191E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +541,7 @@
 				3C7F531B1E40B55200613494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7F531C1E40B55200613494 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +550,7 @@
 				3C7F531E1E40B55200613494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
