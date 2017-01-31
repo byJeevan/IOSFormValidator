@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FormParentView.h"
 
-@interface EmailView : UIView
-
-
-
+@interface EmailView : FormParentView
 @end

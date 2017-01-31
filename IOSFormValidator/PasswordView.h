@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FormParentView.h"
 
-@interface PasswordView : UIView
-
+@interface PasswordView : FormParentView
 @end

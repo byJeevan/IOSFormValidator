@@ -19,7 +19,8 @@
 		09D5101A1E40F5CD000EBA90 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510181E40F5CD000EBA90 /* PasswordView.m */; settings = {ASSET_TAGS = (); }; };
 		09D5101D1E40F5D7000EBA90 /* EmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5101C1E40F5D7000EBA90 /* EmailView.m */; settings = {ASSET_TAGS = (); }; };
 		09D5101E1E40F5D7000EBA90 /* EmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5101C1E40F5D7000EBA90 /* EmailView.m */; settings = {ASSET_TAGS = (); }; };
-		09D510211E410299000EBA90 /* Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510201E410299000EBA90 /* Validation.m */; settings = {ASSET_TAGS = (); }; };
+		09D510271E410415000EBA90 /* ValidationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510261E410415000EBA90 /* ValidationButton.m */; settings = {ASSET_TAGS = (); }; };
+		09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5102A1E410E3C000EBA90 /* FormParentView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,10 @@
 		09D510181E40F5CD000EBA90 /* PasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordView.m; sourceTree = "<group>"; };
 		09D5101B1E40F5D7000EBA90 /* EmailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailView.h; sourceTree = "<group>"; };
 		09D5101C1E40F5D7000EBA90 /* EmailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailView.m; sourceTree = "<group>"; };
-		09D5101F1E410299000EBA90 /* Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validation.h; sourceTree = "<group>"; };
-		09D510201E410299000EBA90 /* Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validation.m; sourceTree = "<group>"; };
+		09D510251E410415000EBA90 /* ValidationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationButton.h; sourceTree = "<group>"; };
+		09D510261E410415000EBA90 /* ValidationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationButton.m; sourceTree = "<group>"; };
+		09D510291E410E3C000EBA90 /* FormParentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormParentView.h; sourceTree = "<group>"; };
+		09D5102A1E410E3C000EBA90 /* FormParentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormParentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +95,10 @@
 		09D50FD81E40F5A0000EBA90 = {
 			isa = PBXGroup;
 			children = (
-				09D5101F1E410299000EBA90 /* Validation.h */,
-				09D510201E410299000EBA90 /* Validation.m */,
+				09D510251E410415000EBA90 /* ValidationButton.h */,
+				09D510261E410415000EBA90 /* ValidationButton.m */,
+				09D510291E410E3C000EBA90 /* FormParentView.h */,
+				09D5102A1E410E3C000EBA90 /* FormParentView.m */,
 				09D5101B1E40F5D7000EBA90 /* EmailView.h */,
 				09D5101C1E40F5D7000EBA90 /* EmailView.m */,
 				09D510171E40F5CD000EBA90 /* PasswordView.h */,
@@ -289,9 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D510211E410299000EBA90 /* Validation.m in Sources */,
 				09D5101D1E40F5D7000EBA90 /* EmailView.m in Sources */,
 				09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */,
+				09D510271E410415000EBA90 /* ValidationButton.m in Sources */,
+				09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */,
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
 				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
 				09D510191E40F5CD000EBA90 /* PasswordView.m in Sources */,
