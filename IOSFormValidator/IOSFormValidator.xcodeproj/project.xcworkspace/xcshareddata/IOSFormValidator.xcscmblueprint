@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "56C3F273BC6F1C45CC7B37F1A6C9AE8E6B06864A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "56C3F273BC6F1C45CC7B37F1A6C9AE8E6B06864A" : 0,
+    "1361DD15DBDB20F7523D4966522D0ADF0D0992E6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6C32ADCA-195D-4D7A-95A1-88C675B4507F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "56C3F273BC6F1C45CC7B37F1A6C9AE8E6B06864A" : "IOSFormValidator\/",
+    "1361DD15DBDB20F7523D4966522D0ADF0D0992E6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IOSFormValidator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IOSFormValidator\/IOSFormValidator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jeevanRao7\/IOSFormValidator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1361DD15DBDB20F7523D4966522D0ADF0D0992E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jeevanRao7\/IOSFormValidator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56C3F273BC6F1C45CC7B37F1A6C9AE8E6B06864A"
+    }
+  ]
+}
