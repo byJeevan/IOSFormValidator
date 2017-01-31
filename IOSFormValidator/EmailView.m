@@ -1,5 +1,5 @@
 //
-//  EmainView.m
+//  EmailView.m
 //  IOSFormValidator
 //
 //  Created by Jeevan on 31/01/17.
@@ -8,43 +8,53 @@
 
 #import "EmailView.h"
 
+@interface EmailView() {
+    
+    
+}
+
+@property (nonatomic, strong) UITextField *emailTextField;
+@end
+
 @implementation EmailView
 
 
--(id)initWithCoder:(NSCoder *)coder {
+-(instancetype) initWithCoder:(NSCoder *)aDecoder {
     
-    self = [super initWithCoder:coder];
-    
-    if (self) {
-     
-    }
-
-    return self;
-}
-
-
--(id) initWithFrame:(CGRect)frame{
-    
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:aDecoder];
     
     if (self) {
         
+        self.emailTextField = [[UITextField alloc] init];
     }
     
-    return self;
+    return  self;
+    
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     if (self) {
         
-        UITextField * emailTextView = [[UITextField alloc] initWithFrame:rect];
-        emailTextView.backgroundColor = [UIColor yellowColor];
-        [self addSubview:emailTextView];
+        self.emailTextField.frame = rect;
+        self.emailTextField.backgroundColor = [UIColor yellowColor];
+        [self addSubview:self.emailTextField];
         
     }
+}
+
+
+- (BOOL)isValidEmailAddress {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest =[NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:self.emailTextField.text];
+}
+
+-(void) excecuteValidation {
+    
+    NSLog(@"Field is %d valid", [self isValidEmailAddress]);
+    
 }
 
 @end

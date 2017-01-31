@@ -1,5 +1,5 @@
 //
-//  EmainView.h
+//  EmailView.h
 //  IOSFormValidator
 //
 //  Created by Jeevan on 31/01/17.
@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EmailView : UIView
+
+
 
 @end

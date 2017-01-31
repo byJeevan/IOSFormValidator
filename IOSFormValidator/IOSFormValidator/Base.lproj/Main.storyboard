@@ -19,7 +19,7 @@
                                 <color key="backgroundColor" red="0.79086738613069885" green="1" blue="0.9240102374680712" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k3x-xL-OFc">
-                                <rect key="frame" x="110" y="472.99999893502695" width="132" height="51"/>
+                                <rect key="frame" x="110" y="473.00000064991593" width="132" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <state key="normal" title="Submit"/>
                             </button>
