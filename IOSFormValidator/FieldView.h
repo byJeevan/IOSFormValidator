@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ViewWrapper.h"
 #import "ViewWrapperFactory.h"
+#import "ErrorButton.h"
 
 @interface FieldView : ViewWrapper
 
 @property (nonatomic, strong) ViewWrapper *viewWrapperField;
+@property (nonatomic, strong) ErrorButton * errorButton;
 
 @property (nonatomic, strong) NSMutableArray * validationFieldsArray;
 
