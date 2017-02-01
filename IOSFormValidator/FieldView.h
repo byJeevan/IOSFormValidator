@@ -1,5 +1,5 @@
 //
-//  EmailView.h
+//  PasswordView.h
 //  IOSFormValidator
 //
 //  Created by Jeevan on 31/01/17.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "FormParentView.h"
 
-@interface EmailView : FormParentView
-@property (nonatomic, strong) UITextField *emailTextField;
+@interface FieldView : UIView
+
 @end

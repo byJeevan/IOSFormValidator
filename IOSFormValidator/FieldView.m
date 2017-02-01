@@ -6,13 +6,13 @@
 //  Copyright © 2017 com.byjeevan.ios.formvalidator. All rights reserved.
 //
 
-#import "PasswordView.h"
+#import "FieldView.h"
 
-@interface PasswordView()
-
+@interface FieldView()
+@property (nonatomic, strong) UITextField *passwordTextField;
 @end
 
-@implementation PasswordView
+@implementation FieldView
 
 -(instancetype) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -31,22 +31,15 @@
     }
 }
 
-
-- (BOOL)isEmpty {
-    return  self.passwordTextField.text.length > 0 ? NO : YES;
-}
 /**
  * Implementation of form view interface method
  */
 -(void) excecuteValidation {
-    NSLog(@"Password Field is %@", [self isEmpty]? @"InValid" : @"Valid");
+   
     [self highLightFormFields];
 }
 -(void) highLightFormFields {
     self.passwordTextField.backgroundColor = [UIColor whiteColor];
-    if ([self isEmpty]) {
-        self.passwordTextField.backgroundColor = [UIColor orangeColor];
-    }
 }
 
 @end
