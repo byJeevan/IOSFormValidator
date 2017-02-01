@@ -9,7 +9,7 @@
 #import "FieldView.h"
 
 @interface FieldView()
-@property (nonatomic, strong) UITextField *passwordTextField;
+
 @end
 
 @implementation FieldView
@@ -17,7 +17,8 @@
 -(instancetype) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.passwordTextField = [[UITextField alloc] init];
+        self.textField = [[UITextField alloc] init];
+        self.validationFieldsArray = [[NSMutableArray alloc] init];
     }
     return  self;
 }
@@ -25,21 +26,20 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     if (self) {
-        self.passwordTextField.frame = rect;
-        self.passwordTextField.backgroundColor = [UIColor grayColor];
-        [self addSubview:self.passwordTextField];
+        self.textField.frame = rect;
+        self.textField.backgroundColor = [UIColor lightGrayColor];
+        [self addSubview:self.textField];
     }
 }
 
-/**
- * Implementation of form view interface method
- */
--(void) excecuteValidation {
-   
-    [self highLightFormFields];
+
+-(void) showErrorBackground {
+    self.textField.backgroundColor = [UIColor orangeColor];
 }
--(void) highLightFormFields {
-    self.passwordTextField.backgroundColor = [UIColor whiteColor];
+
+
+-(void) hideErrorBackground {
+    self.textField.backgroundColor = [UIColor lightGrayColor];
 }
 
 @end

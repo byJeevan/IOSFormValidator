@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FormParentView.h"
 
 @interface FieldView : UIView
+
+@property (nonatomic, strong) UITextField *textField;
+
+@property (nonatomic, strong) NSMutableArray * validationFieldsArray;
+
+-(void) showErrorBackground;
+
+-(void) hideErrorBackground;
 
 @end

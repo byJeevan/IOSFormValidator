@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ValidatorInterface.h"
 
-@interface IsValidEmail : NSObject
+@interface IsValidEmail : NSObject<Validator>
 
 @end

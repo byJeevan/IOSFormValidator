@@ -7,7 +7,19 @@
 //
 
 #import "IsEmpty.h"
+#import "FieldView.h"
 
 @implementation IsEmpty
+
+-(BOOL) isValidField:(FieldView *) field{
+    
+    return field.textField.text.length > 0 ? YES:NO;
+}
+
+-(NSString *) getErrorMessage:(FieldView *) field{
+    
+    return @"Cannot be empty field";
+}
+
 
 @end

@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "FormParentView.h"
+#import "FieldView.h"
+#import "IsEmpty.h"
+#import "IsValidEmail.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet FieldView *passwordFieldView;
+@property (weak, nonatomic) IBOutlet FieldView *EmailFieldView;
+@property (strong, nonatomic) IBOutlet FormParentView *formParentView;
 
 @end
 
@@ -16,7 +23,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+ 
+    //Email
+    [self.EmailFieldView.validationFieldsArray addObjectsFromArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]];
+    
+    //Password
+    [self.passwordFieldView.validationFieldsArray addObject:[IsEmpty new]];
+  
+}
+
+- (IBAction)submitAction:(id)sender {
+    
+    if ([self.formParentView isFormValid]) {
+        //Do after valid
+        NSLog(@"********* FORM IS VALID ************");
+    }
+    else{
+        //Do when not valid
+        NSLog(@"********* FORM IS NOT VALID ************");
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

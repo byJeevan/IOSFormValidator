@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ValidatorInterface : NSObject
+@class FieldView;
+
+/**
+ * Interface class for the Validator
+ */
+@protocol Validator
+
+-(BOOL) isValidField:(FieldView *) field;
+
+-(NSString *) getErrorMessage:(FieldView *) field;
 
 @end
+
+ 

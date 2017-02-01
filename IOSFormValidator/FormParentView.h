@@ -10,15 +10,6 @@
 
 @interface FormParentView : UIView
 
-/**
- * Interface method for the form validation.
- */
--(void) excecuteValidation;
-
-/**
- * Interface method for UI highlights.
- */
--(void) highLightFormFields;
-
+-(BOOL) isFormValid;
 
 @end

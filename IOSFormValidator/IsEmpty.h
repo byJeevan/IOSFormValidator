@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ValidatorInterface.h"
 
-@interface IsEmpty : NSObject
+@interface IsEmpty : NSObject<Validator>
 
 @end
