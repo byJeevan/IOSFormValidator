@@ -11,12 +11,12 @@
 
 @implementation IsEmpty
 
--(BOOL) isValidField:(FieldView *) field{
+-(BOOL) isValidField:(ViewWrapper *) field{
     
-    return field.textField.text.length > 0 ? YES:NO;
+    return field.getText.length > 0 ? YES:NO;
 }
 
--(NSString *) getErrorMessage:(FieldView *) field{
+-(NSString *) getErrorMessage:(ViewWrapper *) field{
     
     return @"Cannot be empty field";
 }

@@ -33,7 +33,7 @@
             {
                 //Set error message field
                 
-                if (![fieldValidationItem isValidField:fieldView]) {
+                if (![fieldValidationItem isValidField:fieldView.viewWrapperField]) {
                     
                     NSLog(@"Field  valid: %@ ", subview);
                     [fieldView showErrorBackground];

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewWrapper.h"
+#import "ViewWrapperFactory.h"
 
-@interface FieldView : UIView
+@interface FieldView : ViewWrapper
 
-@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) ViewWrapper *viewWrapperField;
 
 @property (nonatomic, strong) NSMutableArray * validationFieldsArray;
 

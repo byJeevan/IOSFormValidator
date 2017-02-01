@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class FieldView;
+@class ViewWrapper;
 
 /**
  * Interface class for the Validator
  */
 @protocol Validator
 
--(BOOL) isValidField:(FieldView *) field;
+-(BOOL) isValidField:(ViewWrapper *) field;
 
--(NSString *) getErrorMessage:(FieldView *) field;
+-(NSString *) getErrorMessage:(ViewWrapper *) field;
 
 @end
 

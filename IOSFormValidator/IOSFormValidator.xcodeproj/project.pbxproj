@@ -20,6 +20,10 @@
 		09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5102A1E410E3C000EBA90 /* FormParentView.m */; };
 		3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B61E41BA75007F7666 /* IsEmpty.m */; };
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
+		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
+		3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */; };
+		3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */; };
+		3CB843C91E420ADF007F7666 /* ViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C81E420ADF007F7666 /* ViewWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,14 @@
 		3CB843B61E41BA75007F7666 /* IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsEmpty.m; sourceTree = "<group>"; };
 		3CB843B81E41BA85007F7666 /* IsValidEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidEmail.h; sourceTree = "<group>"; };
 		3CB843B91E41BA85007F7666 /* IsValidEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidEmail.m; sourceTree = "<group>"; };
+		3CB843BB1E41E153007F7666 /* ViewWrapperFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewWrapperFactory.h; sourceTree = "<group>"; };
+		3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWrapperFactory.m; sourceTree = "<group>"; };
+		3CB843C11E41E5B8007F7666 /* UITextFieldViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewWrapper.h; sourceTree = "<group>"; };
+		3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldViewWrapper.m; sourceTree = "<group>"; };
+		3CB843C41E4204A0007F7666 /* UISpinnerViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpinnerViewWrapper.h; sourceTree = "<group>"; };
+		3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpinnerViewWrapper.m; sourceTree = "<group>"; };
+		3CB843C71E420ADF007F7666 /* ViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewWrapper.h; sourceTree = "<group>"; };
+		3CB843C81E420ADF007F7666 /* ViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,14 @@
 		09D50FD81E40F5A0000EBA90 = {
 			isa = PBXGroup;
 			children = (
+				3CB843C71E420ADF007F7666 /* ViewWrapper.h */,
+				3CB843C81E420ADF007F7666 /* ViewWrapper.m */,
+				3CB843C41E4204A0007F7666 /* UISpinnerViewWrapper.h */,
+				3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */,
+				3CB843C11E41E5B8007F7666 /* UITextFieldViewWrapper.h */,
+				3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */,
+				3CB843BB1E41E153007F7666 /* ViewWrapperFactory.h */,
+				3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */,
 				3CB843B21E41B005007F7666 /* ValidatorInterface.h */,
 				3CB843B81E41BA85007F7666 /* IsValidEmail.h */,
 				3CB843B91E41BA85007F7666 /* IsValidEmail.m */,
@@ -298,9 +318,13 @@
 				09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */,
 				09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */,
 				3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */,
+				3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */,
+				3CB843C91E420ADF007F7666 /* ViewWrapper.m in Sources */,
+				3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */,
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
 				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
 				09D510191E40F5CD000EBA90 /* FieldView.m in Sources */,
+				3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */,
 				3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
