@@ -9,7 +9,7 @@
 #import "PasswordView.h"
 
 @interface PasswordView()
-@property (nonatomic, strong) UITextField *passwordTextField;
+
 @end
 
 @implementation PasswordView
@@ -39,7 +39,7 @@
  * Implementation of form view interface method
  */
 -(void) excecuteValidation {
-    NSLog(@"Password Field is %@", [self isEmpty]? @"Valid" : @"Invalid");
+    NSLog(@"Password Field is %@", [self isEmpty]? @"InValid" : @"Valid");
     [self highLightFormFields];
 }
 -(void) highLightFormFields {

@@ -10,4 +10,5 @@
 #import "FormParentView.h"
 
 @interface PasswordView : FormParentView
+@property (nonatomic, strong) UITextField *passwordTextField;
 @end

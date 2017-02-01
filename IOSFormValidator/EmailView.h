@@ -10,4 +10,5 @@
 #import "FormParentView.h"
 
 @interface EmailView : FormParentView
+@property (nonatomic, strong) UITextField *emailTextField;
 @end

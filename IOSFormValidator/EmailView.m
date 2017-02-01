@@ -9,7 +9,7 @@
 #import "EmailView.h"
 
 @interface EmailView()
-@property (nonatomic, strong) UITextField *emailTextField;
+
 @end
 
 @implementation EmailView
