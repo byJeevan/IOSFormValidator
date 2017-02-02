@@ -20,6 +20,7 @@
 		3C8221D91E43054500AD9463 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221D81E43054500AD9463 /* Field.m */; };
 		3C8221DC1E43081500AD9463 /* Form.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221DB1E43081500AD9463 /* Form.m */; };
 		3C8221DE1E432B1100AD9463 /* error_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221DD1E432B1100AD9463 /* error_default.png */; };
+		3C8221E11E4334F100AD9463 /* FieldBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221E01E4334F100AD9463 /* FieldBuilder.m */; };
 		3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B61E41BA75007F7666 /* IsEmpty.m */; };
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
 		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
@@ -71,6 +72,8 @@
 		3C8221DA1E43081500AD9463 /* Form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
 		3C8221DB1E43081500AD9463 /* Form.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Form.m; sourceTree = "<group>"; };
 		3C8221DD1E432B1100AD9463 /* error_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_default.png; sourceTree = "<group>"; };
+		3C8221DF1E4334F100AD9463 /* FieldBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldBuilder.h; sourceTree = "<group>"; };
+		3C8221E01E4334F100AD9463 /* FieldBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldBuilder.m; sourceTree = "<group>"; };
 		3CB843B21E41B005007F7666 /* ValidatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatorInterface.h; sourceTree = "<group>"; };
 		3CB843B51E41BA75007F7666 /* IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsEmpty.h; sourceTree = "<group>"; };
 		3CB843B61E41BA75007F7666 /* IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsEmpty.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				3C8221CE1E42F00F00AD9463 /* Error View */,
+				3C8221DF1E4334F100AD9463 /* FieldBuilder.h */,
+				3C8221E01E4334F100AD9463 /* FieldBuilder.m */,
 				3C8221DA1E43081500AD9463 /* Form.h */,
 				3C8221DB1E43081500AD9463 /* Form.m */,
 				3C8221D71E43054500AD9463 /* Field.h */,
@@ -359,6 +364,7 @@
 				3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */,
 				3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */,
 				3CB843C91E420ADF007F7666 /* ViewWrapper.m in Sources */,
+				3C8221E11E4334F100AD9463 /* FieldBuilder.m in Sources */,
 				3C8221D41E42F08A00AD9463 /* ErrorMessageView.m in Sources */,
 				3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */,
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,

@@ -25,20 +25,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
- 
-    //Other fields will go here..
-     //   Field * fieldXYZ = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorButton:self.errorButtonEmail validationsArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]];
-    
-    
+   
     self.form = [Form new];
-    
-    
-    [self.form addNewField:[[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]]];
-    
-    //Adding  other fields goes here.. ...
-//    [self.errorButtonEmail setImage:[UIImage imageNamed:@"error_default.png"] forState:UIControlStateNormal];
-    
+    Field * field = [Field makeWithBuilder:^(FieldBuilder * builder) {
+            builder.field = self.emailField;
+            builder.messageLabel = self.emaildMessageLabel;
+            builder.hintView = self.errorButtonEmail;
+            builder.validationArray = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
+    }];
+    [self.form addNewField:field];
+ 
     [self.errorButtonEmail setBackgroundImage:[UIImage imageNamed:@"error_default.png"] forState:UIControlStateNormal];
   
 }

@@ -15,32 +15,56 @@
 
 @implementation Field
 
--(instancetype) initWithField:(id)editView errorMessageView:(UILabel *) messageLabel errorHintView:(UIView *) hintView validationsArray:(NSArray *) validationsArray {
-    
+- (instancetype)init {
+    FieldBuilder *builder = [FieldBuilder new];
+    return [self initWithBuilder:builder];
+}
+
++ (instancetype)makeWithBuilder:(void (^)(FieldBuilder *))updateBlock {
+    FieldBuilder *builder = [FieldBuilder new];
+    updateBlock(builder);
+    return [[Field alloc] initWithBuilder:builder];
+}
+
+-(instancetype)initWithBuilder:(FieldBuilder *)builder
+{
     self = [super init];
-    
     if (self) {
+ 
+        self.viewWrapperField  = [[ViewWrapperFactory new] getViewWrapper: builder.field];
         
-        self.viewWrapperField  = [[ViewWrapperFactory new] getViewWrapper:editView];
+        self.errorMessageLabel = builder.messageLabel;
         
-        self.errorMessageLabel = messageLabel;
+        self.errorHintView  = builder.hintView;
         
-        self.errorHintView  = hintView;
-        
-        self.validationItemsArray = [[NSArray alloc] initWithArray:validationsArray];
+        self.validationItemsArray = [[NSArray alloc] initWithArray: builder.validationArray];
         
         [self initFieldAttributes];
+        
     }
     
     return self;
+}
+
+- (FieldBuilder *)makeBuilder {
     
+    FieldBuilder *builder = [FieldBuilder new];
+    
+    builder.field =     self.viewWrapperField;
+    
+    builder.messageLabel=   self.errorMessageLabel;
+    
+    builder.hintView =  self.errorHintView ;
+    
+    builder.validationArray  =   self.validationItemsArray;
+    
+    return builder;
 }
 
 -(void) initFieldAttributes {
     
     self.errorHintView.hidden = YES;
     
-   
     self.errorMessageLabel.hidden = YES;
     
      //The setup code (in viewDidLoad in your view controller)
@@ -55,16 +79,12 @@
       if (self.errorHintView.isHidden) {
           //Gaurd - touch event when no error.
           
-
       }
       else{ //When error view visible
           
           self.errorMessageLabel.hidden = !self.errorMessageLabel.hidden ;
       }
-  
 }
-
-
 
 -(void) showErrorField:(Field *) field withMessage:(NSString *) message{
     
