@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ErrorMessageView : UIView
+@interface ErrorMessageView : UILabel
 
 @end

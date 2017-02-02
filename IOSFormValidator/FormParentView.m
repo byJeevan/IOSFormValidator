@@ -24,6 +24,8 @@
     for (UIView *subview in self.subviews)
     {
         
+        NSLog(@"Subiview : %@", subview);
+        
         if ([subview isKindOfClass:FieldView.class]) {
             
             FieldView * fieldView = (FieldView *) subview;
@@ -36,14 +38,16 @@
                 if (![fieldValidationItem isValidField:fieldView.viewWrapperField]) {
                     
                     NSLog(@"Field  valid: %@ ", subview);
-                    [fieldView showErrorBackground];
-                    
+       
                     isAllElementsValid = NO;
+ 
+                    [fieldView showErrorBackgroundWithMessage:[fieldValidationItem getErrorMessage:fieldView.viewWrapperField]];
                     
                 }
                 else{
-                    NSLog(@"Field  Invalid: %@ ", subview);
                     
+                    NSLog(@"Field  Invalid: %@ ", subview);
+ 
                     [fieldView hideErrorBackground];
                     
                 }

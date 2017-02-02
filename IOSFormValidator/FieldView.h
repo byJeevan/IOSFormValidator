@@ -10,16 +10,20 @@
 #import "ViewWrapper.h"
 #import "ViewWrapperFactory.h"
 #import "ErrorButton.h"
+#import "ErrorMessageView.h"
 
-@interface FieldView : ViewWrapper
+@interface FieldView : UIView
 
 @property (nonatomic, strong) ViewWrapper *viewWrapperField;
 @property (nonatomic, strong) ErrorButton * errorButton;
+@property (nonatomic, strong) ErrorMessageView * errorMessageView;
 
 @property (nonatomic, strong) NSMutableArray * validationFieldsArray;
 
+//+(ViewWrapper *) getViewWrapperFromObject:(id) view;
 -(void) showErrorBackground;
-
 -(void) hideErrorBackground;
+
+-(void) showErrorBackgroundWithMessage:(NSString *) message;
 
 @end

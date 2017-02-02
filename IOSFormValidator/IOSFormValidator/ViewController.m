@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet FieldView *passwordFieldView;
 @property (weak, nonatomic) IBOutlet FieldView *EmailFieldView;
 @property (strong, nonatomic) IBOutlet FormParentView *formParentView;
+@property (weak, nonatomic) IBOutlet FieldView *spinnerView;
 
 @end
 
