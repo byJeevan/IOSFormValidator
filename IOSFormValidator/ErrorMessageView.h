@@ -1,5 +1,5 @@
 //
-//  ErrorButton.h
+//  ErrorMessageView.h
 //  IOSFormValidator
 //
 //  Created by Jeevan on 02/02/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ErrorButton : UIButton
+@interface ErrorMessageView : UIView
 
 @end

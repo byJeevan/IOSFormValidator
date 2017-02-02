@@ -1,14 +1,14 @@
 //
-//  ErrorButton.m
+//  ErrorMessageView.m
 //  IOSFormValidator
 //
 //  Created by Jeevan on 02/02/17.
 //  Copyright © 2017 byjeevan. All rights reserved.
 //
 
-#import "ErrorButton.h"
+#import "ErrorMessageView.h"
 
-@implementation ErrorButton
+@implementation ErrorMessageView
 
 /*
 // Only override drawRect: if you perform custom drawing.
