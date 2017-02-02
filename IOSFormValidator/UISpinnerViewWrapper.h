@@ -16,4 +16,7 @@
 -(UIView *) getView;
 
 -(NSString *) getText;
+
+-(void) focusToView;
+
 @end

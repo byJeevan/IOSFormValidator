@@ -19,6 +19,8 @@
 
 -(NSString *) getErrorMessage:(ViewWrapper *) field;
 
+//-(void) focusToField:(ViewWrapper *)field;
+
 @end
 
  

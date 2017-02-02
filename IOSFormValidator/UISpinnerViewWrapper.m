@@ -38,4 +38,10 @@
     return self.textView;
 }
 
+
+-(void) focusToView{
+    
+    [self.textView becomeFirstResponder];
+}
+
 @end

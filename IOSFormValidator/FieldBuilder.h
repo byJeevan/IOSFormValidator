@@ -15,5 +15,4 @@
 @property (nonatomic, strong) UIView *hintView;
 @property (nonatomic, strong) UILabel *messageLabel;
 @property (nonatomic, strong) NSArray *validationArray;
- 
 @end

@@ -38,4 +38,9 @@
     return self.textField;
 }
 
+-(void) focusToView {
+    
+    [self.textField becomeFirstResponder];
+}
+
 @end

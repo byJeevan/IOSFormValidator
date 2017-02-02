@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RegistrationViewController.h"
 #import "Field.h"
 #import "Form.h"
 #import "IsEmpty.h"
@@ -43,11 +44,17 @@
 
     
     //Form element - password.
-    NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], [IsValidPan new], nil];
+    NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], nil];
     Field * fieldPassword = [[Field alloc] initWithField:self.passwordField errorMessageView:self.errorPasswordLabel errorHintView:self.errorPassIcon validationsArray:arrayValidationPassword];
     
     [self.form addNewField:fieldPassword];
   
+}
+- (IBAction)registrationAction:(id)sender {
+    
+    RegistrationViewController * registration = [[RegistrationViewController alloc] init];
+    
+    [self presentViewController:registration animated:NO completion:nil];
 }
 
 - (IBAction)submitAction:(id)sender {
