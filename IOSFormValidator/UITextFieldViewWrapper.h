@@ -11,6 +11,8 @@
 
 @interface UITextFieldViewWrapper : ViewWrapper
 
+-(instancetype) initWithView:(UIView *) view;
+
 -(UIView *) getView;
 
 -(NSString *) getText;

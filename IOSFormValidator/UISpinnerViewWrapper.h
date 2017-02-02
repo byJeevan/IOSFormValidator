@@ -11,6 +11,8 @@
 
 @interface UISpinnerViewWrapper : ViewWrapper
 
+-(instancetype) initWithView:(UIView *) view;
+
 -(UIView *) getView;
 
 -(NSString *) getText;

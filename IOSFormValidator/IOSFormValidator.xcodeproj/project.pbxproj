@@ -15,12 +15,11 @@
 		09D50FF41E40F5A0000EBA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */; };
 		09D50FFF1E40F5A0000EBA90 /* IOSFormValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FFE1E40F5A0000EBA90 /* IOSFormValidatorTests.m */; };
 		09D5100A1E40F5A0000EBA90 /* IOSFormValidatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */; };
-		09D510191E40F5CD000EBA90 /* FieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510181E40F5CD000EBA90 /* FieldView.m */; };
-		09D5101A1E40F5CD000EBA90 /* FieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D510181E40F5CD000EBA90 /* FieldView.m */; };
-		09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D5102A1E410E3C000EBA90 /* FormParentView.m */; };
 		3C8221D11E42F03000AD9463 /* ErrorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221D01E42F03000AD9463 /* ErrorButton.m */; };
 		3C8221D41E42F08A00AD9463 /* ErrorMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221D31E42F08A00AD9463 /* ErrorMessageView.m */; };
-		3C8221D61E42F33400AD9463 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221D51E42F33400AD9463 /* View.xib */; };
+		3C8221D91E43054500AD9463 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221D81E43054500AD9463 /* Field.m */; };
+		3C8221DC1E43081500AD9463 /* Form.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221DB1E43081500AD9463 /* Form.m */; };
+		3C8221DE1E432B1100AD9463 /* error_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221DD1E432B1100AD9463 /* error_default.png */; };
 		3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B61E41BA75007F7666 /* IsEmpty.m */; };
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
 		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
@@ -63,15 +62,15 @@
 		09D510051E40F5A0000EBA90 /* IOSFormValidatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFormValidatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFormValidatorUITests.m; sourceTree = "<group>"; };
 		09D5100B1E40F5A0000EBA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09D510171E40F5CD000EBA90 /* FieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldView.h; sourceTree = "<group>"; };
-		09D510181E40F5CD000EBA90 /* FieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldView.m; sourceTree = "<group>"; };
-		09D510291E410E3C000EBA90 /* FormParentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormParentView.h; sourceTree = "<group>"; };
-		09D5102A1E410E3C000EBA90 /* FormParentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormParentView.m; sourceTree = "<group>"; };
 		3C8221CF1E42F03000AD9463 /* ErrorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorButton.h; sourceTree = "<group>"; };
 		3C8221D01E42F03000AD9463 /* ErrorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorButton.m; sourceTree = "<group>"; };
 		3C8221D21E42F08A00AD9463 /* ErrorMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessageView.h; sourceTree = "<group>"; };
 		3C8221D31E42F08A00AD9463 /* ErrorMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorMessageView.m; sourceTree = "<group>"; };
-		3C8221D51E42F33400AD9463 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		3C8221D71E43054500AD9463 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		3C8221D81E43054500AD9463 /* Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Field.m; sourceTree = "<group>"; };
+		3C8221DA1E43081500AD9463 /* Form.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
+		3C8221DB1E43081500AD9463 /* Form.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Form.m; sourceTree = "<group>"; };
+		3C8221DD1E432B1100AD9463 /* error_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_default.png; sourceTree = "<group>"; };
 		3CB843B21E41B005007F7666 /* ValidatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatorInterface.h; sourceTree = "<group>"; };
 		3CB843B51E41BA75007F7666 /* IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsEmpty.h; sourceTree = "<group>"; };
 		3CB843B61E41BA75007F7666 /* IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsEmpty.m; sourceTree = "<group>"; };
@@ -115,7 +114,11 @@
 		09D50FD81E40F5A0000EBA90 = {
 			isa = PBXGroup;
 			children = (
-				3C8221CD1E42F00100AD9463 /* Form Views */,
+				3C8221CE1E42F00F00AD9463 /* Error View */,
+				3C8221DA1E43081500AD9463 /* Form.h */,
+				3C8221DB1E43081500AD9463 /* Form.m */,
+				3C8221D71E43054500AD9463 /* Field.h */,
+				3C8221D81E43054500AD9463 /* Field.m */,
 				3C8221CC1E42EA8900AD9463 /* View Wrappers */,
 				3C8221CB1E42EA6A00AD9463 /* Validators */,
 				09D50FE31E40F5A0000EBA90 /* IOSFormValidator */,
@@ -142,6 +145,7 @@
 				09D50FE81E40F5A0000EBA90 /* AppDelegate.m */,
 				09D50FEA1E40F5A0000EBA90 /* ViewController.h */,
 				09D50FEB1E40F5A0000EBA90 /* ViewController.m */,
+				3C8221DD1E432B1100AD9463 /* error_default.png */,
 				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
 				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
 				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
@@ -202,19 +206,6 @@
 				3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */,
 			);
 			name = "View Wrappers";
-			sourceTree = "<group>";
-		};
-		3C8221CD1E42F00100AD9463 /* Form Views */ = {
-			isa = PBXGroup;
-			children = (
-				3C8221CE1E42F00F00AD9463 /* Error View */,
-				09D510171E40F5CD000EBA90 /* FieldView.h */,
-				09D510181E40F5CD000EBA90 /* FieldView.m */,
-				09D510291E410E3C000EBA90 /* FormParentView.h */,
-				09D5102A1E410E3C000EBA90 /* FormParentView.m */,
-				3C8221D51E42F33400AD9463 /* View.xib */,
-			);
-			name = "Form Views";
 			sourceTree = "<group>";
 		};
 		3C8221CE1E42F00F00AD9463 /* Error View */ = {
@@ -333,8 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8221D61E42F33400AD9463 /* View.xib in Resources */,
 				09D50FF41E40F5A0000EBA90 /* LaunchScreen.storyboard in Resources */,
+				3C8221DE1E432B1100AD9463 /* error_default.png in Resources */,
 				09D50FF11E40F5A0000EBA90 /* Assets.xcassets in Resources */,
 				09D50FEF1E40F5A0000EBA90 /* Main.storyboard in Resources */,
 			);
@@ -361,8 +352,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8221DC1E43081500AD9463 /* Form.m in Sources */,
+				3C8221D91E43054500AD9463 /* Field.m in Sources */,
 				09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */,
-				09D5102B1E410E3C000EBA90 /* FormParentView.m in Sources */,
 				3C8221D11E42F03000AD9463 /* ErrorButton.m in Sources */,
 				3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */,
 				3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */,
@@ -371,7 +363,6 @@
 				3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */,
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
 				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
-				09D510191E40F5CD000EBA90 /* FieldView.m in Sources */,
 				3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */,
 				3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */,
 			);
@@ -382,7 +373,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D50FFF1E40F5A0000EBA90 /* IOSFormValidatorTests.m in Sources */,
-				09D5101A1E40F5CD000EBA90 /* FieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

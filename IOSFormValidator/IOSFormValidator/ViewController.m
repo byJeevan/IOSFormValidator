@@ -7,16 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "FormParentView.h"
-#import "FieldView.h"
+#import "Field.h"
+#import "Form.h"
 #import "IsEmpty.h"
 #import "IsValidEmail.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet FieldView *passwordFieldView;
-@property (weak, nonatomic) IBOutlet FieldView *EmailFieldView;
-@property (strong, nonatomic) IBOutlet FormParentView *formParentView;
-@property (weak, nonatomic) IBOutlet FieldView *spinnerView;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UIButton *errorButtonEmail;
+@property (weak, nonatomic) IBOutlet UILabel *emaildMessageLabel;
+
+@property (strong, nonatomic)  Form * form ;
 
 @end
 
@@ -25,17 +26,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    //Email
-    [self.EmailFieldView.validationFieldsArray addObjectsFromArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]];
+ 
+    //Other fields will go here..
+     //   Field * fieldXYZ = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorButton:self.errorButtonEmail validationsArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]];
     
-    //Password
-    [self.passwordFieldView.validationFieldsArray addObject:[IsEmpty new]];
+    
+    self.form = [Form new];
+    
+    
+    [self.form addNewField:[[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:[NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil]]];
+    
+    //Adding  other fields goes here.. ...
+//    [self.errorButtonEmail setImage:[UIImage imageNamed:@"error_default.png"] forState:UIControlStateNormal];
+    
+    [self.errorButtonEmail setBackgroundImage:[UIImage imageNamed:@"error_default.png"] forState:UIControlStateNormal];
   
 }
 
+
+
 - (IBAction)submitAction:(id)sender {
     
-    if ([self.formParentView isFormValid]) {
+    
+    if ([self.form isFormValid]) {
         //Do after valid
         NSLog(@"********* FORM IS VALID ************");
     }

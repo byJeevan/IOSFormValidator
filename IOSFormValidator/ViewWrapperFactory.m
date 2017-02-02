@@ -16,11 +16,11 @@
     
     if ([view isKindOfClass:UITextField.class]) {
         
-        return  [UITextFieldViewWrapper new];
+        return  [[UITextFieldViewWrapper alloc] initWithView:view];
     }
     else  if ([view isKindOfClass:UITextView.class]) {
         
-        return  [UISpinnerViewWrapper new];
+        return  [[UISpinnerViewWrapper alloc] initWithView:view];
     }
     
     NSLog(@"ViewWrapper Class not matching !");

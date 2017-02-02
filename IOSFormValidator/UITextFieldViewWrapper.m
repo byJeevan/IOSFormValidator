@@ -16,13 +16,13 @@
 
 @implementation UITextFieldViewWrapper
 
--(instancetype) init {
+-(instancetype) initWithView:(UIView *) view {
     
     self = [super init];
     
     if (self) {
         
-        self.textField  = [[UITextField alloc] init];
+        self.textField  = (UITextField *) view;
         
     }
     

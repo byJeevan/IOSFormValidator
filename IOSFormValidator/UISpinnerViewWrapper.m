@@ -16,13 +16,14 @@
 
 @implementation UISpinnerViewWrapper
 
--(instancetype) init {
+-(instancetype) initWithView:(UIView *) view {
     
     self = [super init];
     
     if (self) {
-     
-        self.textView  = [[UITextView alloc] init];
+        
+        self.textView  = (UITextView *) view;
+        
     }
     
     return self;
