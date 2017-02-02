@@ -12,7 +12,7 @@
 #import "Form.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 //Email field
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UIButton *errorButtonEmail;
@@ -48,6 +48,10 @@
     Field * fieldPassword = [[Field alloc] initWithField:self.passwordField errorMessageView:self.errorPasswordLabel errorHintView:self.errorPassIcon validationsArray:arrayValidationPassword];
     
     [self.form addNewField:fieldPassword];
+    
+    //Delegates
+    self.emailField.delegate = self;
+    self.passwordField.delegate = self;
   
 }
 - (IBAction)registrationAction:(id)sender {
@@ -79,4 +83,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma TextFieldDelegates
+-(BOOL) textFieldShouldReturn:(UITextField *)textField {
+    
+    [self.view endEditing:YES];
+    
+    return YES;
+}
 @end

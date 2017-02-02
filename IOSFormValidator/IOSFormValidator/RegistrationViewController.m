@@ -10,7 +10,7 @@
 #import "Form.h"
 
 
-@interface RegistrationViewController ()
+@interface RegistrationViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UIButton *errorIconFirstName;
@@ -130,6 +130,12 @@
     self.emailField.keyboardType = UIKeyboardTypeEmailAddress;
     self.mobileField.keyboardType = UIKeyboardTypeNamePhonePad;
     
+    self.firstNameField.delegate =
+    self.lastName.delegate =
+    self.mobileField.delegate =
+    self.emailField.delegate =
+    self.passwordField.delegate =
+    self.birthDateField.delegate = self;
     
     
 }
@@ -137,6 +143,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma TextFieldDelegates 
+-(BOOL) textFieldShouldReturn:(UITextField *)textField {
+    
+    [self.view endEditing:YES];
+   
+    return YES;
 }
 
 
