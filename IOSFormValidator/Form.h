@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "Field.h"
+#import "IsEmpty.h"
+#import "IsValidEmail.h"
+#import "IsValidDate.h"
+#import "IsValidLength.h"
+#import "IsNumber.h"
+#import "IsAlphabet.h"
 
 @interface Form : NSObject
 

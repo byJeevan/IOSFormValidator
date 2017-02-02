@@ -10,9 +10,7 @@
 #import "RegistrationViewController.h"
 #import "Field.h"
 #import "Form.h"
-#import "IsEmpty.h"
-#import "IsValidEmail.h"
-#import "IsValidPan.h"
+
 
 @interface ViewController ()
 //Email field
@@ -36,11 +34,13 @@
    
     //Create new form
     self.form = [Form new];
-    
+ 
     //Form element - email
     NSArray * arrayValidationEmail = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
     Field * fieldEmail = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
     [self.form addNewField:fieldEmail];
+    
+    self.emailField.keyboardType = UIKeyboardTypeEmailAddress;
 
     
     //Form element - password.

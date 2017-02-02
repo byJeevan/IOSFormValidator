@@ -18,6 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //Cursor tint color change
+    [[UITextField appearance] setTintColor:[UIColor whiteColor]];
+    [[UITextView appearance] setTintColor:[UIColor whiteColor]];
     
     return YES;
 }
