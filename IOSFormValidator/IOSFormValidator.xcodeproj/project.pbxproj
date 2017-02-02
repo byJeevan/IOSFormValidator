@@ -187,20 +187,8 @@
 		09D50FE31E40F5A0000EBA90 /* IOSFormValidator */ = {
 			isa = PBXGroup;
 			children = (
-				09D50FE71E40F5A0000EBA90 /* AppDelegate.h */,
-				09D50FE81E40F5A0000EBA90 /* AppDelegate.m */,
-				09D50FEA1E40F5A0000EBA90 /* ViewController.h */,
-				09D50FEB1E40F5A0000EBA90 /* ViewController.m */,
-				3C8221DD1E432B1100AD9463 /* error_default.png */,
-				3C8221E81E434CAA00AD9463 /* line.png */,
-				3C8221E61E434B7900AD9463 /* underline.png */,
-				3C8221EA1E434F5300AD9463 /* erroricon1.png */,
-				3C8221EC1E4351C400AD9463 /* login_logo.png */,
-				3C8221E41E43442100AD9463 /* background_base.jpg */,
-				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
-				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
-				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
-				09D50FF51E40F5A0000EBA90 /* Info.plist */,
+				3C82221A1E436B6400AD9463 /* Controllers */,
+				3C8222191E436B4600AD9463 /* Assets */,
 				09D50FE41E40F5A0000EBA90 /* Supporting Files */,
 			);
 			path = IOSFormValidator;
@@ -209,6 +197,10 @@
 		09D50FE41E40F5A0000EBA90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
+				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
+				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
+				09D50FF51E40F5A0000EBA90 /* Info.plist */,
 				09D50FE51E40F5A0000EBA90 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -315,6 +307,30 @@
 				3C8221CB1E42EA6A00AD9463 /* Validators */,
 			);
 			name = "FormValidator Classes";
+			sourceTree = "<group>";
+		};
+		3C8222191E436B4600AD9463 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3C8221DD1E432B1100AD9463 /* error_default.png */,
+				3C8221E81E434CAA00AD9463 /* line.png */,
+				3C8221E61E434B7900AD9463 /* underline.png */,
+				3C8221EA1E434F5300AD9463 /* erroricon1.png */,
+				3C8221EC1E4351C400AD9463 /* login_logo.png */,
+				3C8221E41E43442100AD9463 /* background_base.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		3C82221A1E436B6400AD9463 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09D50FE71E40F5A0000EBA90 /* AppDelegate.h */,
+				09D50FE81E40F5A0000EBA90 /* AppDelegate.m */,
+				09D50FEA1E40F5A0000EBA90 /* ViewController.h */,
+				09D50FEB1E40F5A0000EBA90 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
