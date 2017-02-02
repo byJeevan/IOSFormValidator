@@ -7,6 +7,23 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController">
             <connections>
+                <outlet property="agreementSwitch" destination="JVL-85-7sA" id="vpn-NX-jfy"/>
+                <outlet property="emailErrorIcon" destination="Hcc-wE-LLQ" id="MDV-Se-jLx"/>
+                <outlet property="emailErrorLabel" destination="8tl-67-Jcf" id="teD-Y9-H4s"/>
+                <outlet property="emailField" destination="D1Y-FS-ds7" id="QPW-Di-0Tc"/>
+                <outlet property="errorIconFirstName" destination="CT1-2q-cGk" id="hdf-Jg-gbI"/>
+                <outlet property="errorIconLasteName" destination="8nF-aO-aCx" id="yP6-62-ZaT"/>
+                <outlet property="errorLabelFirstName" destination="FCu-MU-NmD" id="ACT-kJ-6zK"/>
+                <outlet property="errorLabelLastName" destination="ekA-eA-4qy" id="ZZ5-JA-VI0"/>
+                <outlet property="firstNameField" destination="LMj-ig-PtQ" id="aIW-4A-iCr"/>
+                <outlet property="genderSegment" destination="U5v-v4-9vM" id="Jrp-fx-nsP"/>
+                <outlet property="lastName" destination="Mmy-4f-pps" id="4DF-Kp-gNz"/>
+                <outlet property="mobileErrorIcon" destination="F89-lV-8sL" id="IOQ-DY-za0"/>
+                <outlet property="mobileErrorLabel" destination="oct-Ba-viR" id="uGb-9U-8P8"/>
+                <outlet property="mobileField" destination="oi5-HO-8FD" id="e9k-Fv-DZ3"/>
+                <outlet property="passwordErrorIcon" destination="Lvl-xG-1gx" id="b3p-ka-Yhc"/>
+                <outlet property="passwordErrorLabel" destination="STX-nt-kfc" id="TxQ-bk-0FB"/>
+                <outlet property="passwordField" destination="n3F-lF-prj" id="EF5-PH-6e1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +40,7 @@
                     </variation>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo.png" id="KJC-q8-2LD">
-                    <rect key="frame" x="222" y="421" width="103" height="114"/>
+                    <rect key="frame" x="214" y="449" width="98" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="0.0" y="344" width="117" height="90"/>
@@ -82,6 +99,11 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                     <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="1" green="0.65780011980907238" blue="0.62995783521418902" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="30" y="27" width="250" height="30"/>
                     </variation>
@@ -135,7 +157,7 @@
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" id="TtP-64-yiO">
-                    <rect key="frame" x="12" y="514" width="297" height="40"/>
+                    <rect key="frame" x="12" y="514" width="300" height="46"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" red="0.84514552350000005" green="0.72496289010000003" blue="0.83747005460000001" alpha="0.29030172409999999" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
@@ -145,6 +167,9 @@
                     <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="12" y="427" width="297" height="40"/>
                     </variation>
+                    <connections>
+                        <action selector="submitAction:" destination="-1" eventType="touchUpInside" id="qXx-6E-Iip"/>
+                    </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F89-lV-8sL">
                     <rect key="frame" x="254" y="335" width="20" height="14"/>
@@ -159,7 +184,7 @@
                     </variation>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" background="line.png" id="D1Y-FS-ds7">
-                    <rect key="frame" x="24" y="260" width="259" height="28"/>
+                    <rect key="frame" x="24" y="260" width="250" height="28"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
@@ -212,16 +237,6 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" background="line.png" id="oi5-HO-8FD">
-                    <rect key="frame" x="24" y="327" width="250" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
-                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="35" y="286" width="250" height="30"/>
-                    </variation>
-                </textField>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some error occured" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oct-Ba-viR">
                     <rect key="frame" x="33" y="350" width="250" height="25"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -236,7 +251,7 @@
                     </variation>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="U5v-v4-9vM">
-                    <rect key="frame" x="23" y="206" width="172" height="29"/>
+                    <rect key="frame" x="23" y="206" width="141" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
                         <segment title="Male"/>
@@ -250,17 +265,41 @@
                     <color key="onTintColor" red="0.76078431372549016" green="0.56862745098039214" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                 </switch>
                 <pickerView contentMode="scaleToFill" id="NEp-O4-pgo">
-                    <rect key="frame" x="213" y="206" width="80" height="28"/>
+                    <rect key="frame" x="182" y="206" width="101" height="28"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sCP-42-R9b">
+                    <rect key="frame" x="6" y="6" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="back-red.png"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Zxz-iO-Hcm"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" background="line.png" id="oi5-HO-8FD">
+                    <rect key="frame" x="24" y="327" width="250" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                    <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="35" y="286" width="250" height="30"/>
+                    </variation>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.59343434343434343" green="0.11222632931091223" blue="0.24613591343402141" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="123" y="233"/>
+            <point key="canvasLocation" x="310" y="257"/>
         </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="AhJ-XA-t5P">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="223" y="50"/>
+        </imageView>
     </objects>
     <resources>
+        <image name="back-red.png" width="128" height="128"/>
         <image name="background_base.jpg" width="564" height="1000"/>
         <image name="erroricon1.png" width="32" height="26"/>
         <image name="line.png" width="705" height="175"/>
