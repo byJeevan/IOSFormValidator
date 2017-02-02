@@ -202,12 +202,12 @@
 		09D50FE41E40F5A0000EBA90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				099379931E43829100F03622 /* RegistrationViewController.xib */,
 				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
 				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
 				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
 				09D50FF51E40F5A0000EBA90 /* Info.plist */,
 				09D50FE51E40F5A0000EBA90 /* main.m */,
-				099379931E43829100F03622 /* RegistrationViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
