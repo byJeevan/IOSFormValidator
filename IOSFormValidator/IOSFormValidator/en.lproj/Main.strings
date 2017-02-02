@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "FvY-Tq-ceL"; */
+"FvY-Tq-ceL.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "some error occured"; ObjectID = "KZ6-i1-Ocf"; */
+"KZ6-i1-Ocf.text" = "some error occured";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "OGQ-Vr-gAk"; */
+"OGQ-Vr-gAk.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "some error occured"; ObjectID = "hKj-3G-jdr"; */
+"hKj-3G-jdr.text" = "some error occured";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "k3x-xL-OFc"; */
+"k3x-xL-OFc.normalTitle" = "Login";

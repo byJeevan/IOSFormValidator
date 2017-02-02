@@ -7,7 +7,6 @@
 //
 
 #import "IsValidEmail.h"
-#import "ViewWrapper.h"
 
 @implementation IsValidEmail
 
@@ -20,7 +19,7 @@
 }
 
 -(NSString *) getErrorMessage:(ViewWrapper *) field{
-    return @"Invalid Email ID";
+    return NSLocalizedString(@"invalid.error.email", nil);
 }
 
 

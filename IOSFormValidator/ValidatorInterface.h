@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-@class ViewWrapper;
+#import "ViewWrapper.h"
 
 /**
  * Interface class for the Validator

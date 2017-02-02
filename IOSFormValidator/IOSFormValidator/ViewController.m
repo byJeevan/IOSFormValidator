@@ -11,11 +11,18 @@
 #import "Form.h"
 #import "IsEmpty.h"
 #import "IsValidEmail.h"
+#import "IsValidPan.h"
 
 @interface ViewController ()
+//Email field
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UIButton *errorButtonEmail;
 @property (weak, nonatomic) IBOutlet UILabel *emaildMessageLabel;
+
+//Password field
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UILabel *errorPasswordLabel;
+@property (weak, nonatomic) IBOutlet UIButton *errorPassIcon;
 
 @property (strong, nonatomic)  Form * form ;
 
@@ -26,33 +33,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    //Create new form
     self.form = [Form new];
     
-//    Field * field = [Field makeWithBuilder:^(FieldBuilder * builder) {
-//            builder.field = self.emailField;
-//            builder.messageLabel = self.emaildMessageLabel;
-//            builder.hintView = self.errorButtonEmail;
-//            builder.validationArray = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
-//    }];
-//
-    
+    //Form element - email
     NSArray * arrayValidationEmail = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
-    
-    Field * field = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
-    
-    [self.form addNewField:field];
+    Field * fieldEmail = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
+    [self.form addNewField:fieldEmail];
 
+    
+    //Form element - password.
+    NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], [IsValidPan new], nil];
+    Field * fieldPassword = [[Field alloc] initWithField:self.passwordField errorMessageView:self.errorPasswordLabel errorHintView:self.errorPassIcon validationsArray:arrayValidationPassword];
+    
+    [self.form addNewField:fieldPassword];
   
 }
 
-
-
 - (IBAction)submitAction:(id)sender {
-    
     
     if ([self.form isFormValid]) {
         //Do after valid
         NSLog(@"********* FORM IS VALID ************");
+        
+        UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"Successfull validation" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [successAlert show];
+        
     }
     else{
         //Do when not valid

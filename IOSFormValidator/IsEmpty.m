@@ -7,7 +7,6 @@
 //
 
 #import "IsEmpty.h"
-#import "ViewWrapper.h"
 
 @implementation IsEmpty
 
@@ -18,7 +17,7 @@
 
 -(NSString *) getErrorMessage:(ViewWrapper *) field{
     
-    return @"Cannot be empty field";
+    return NSLocalizedString(@"invalid.error.empty", nil);
 }
 
 

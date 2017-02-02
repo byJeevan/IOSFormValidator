@@ -26,6 +26,18 @@
 		3C8221E91E434CAA00AD9463 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221E81E434CAA00AD9463 /* line.png */; };
 		3C8221EB1E434F5300AD9463 /* erroricon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221EA1E434F5300AD9463 /* erroricon1.png */; };
 		3C8221ED1E4351C400AD9463 /* login_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221EC1E4351C400AD9463 /* login_logo.png */; };
+		3C8221F01E4355F500AD9463 /* IsNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221EF1E4355F500AD9463 /* IsNumber.m */; };
+		3C8221F31E43561100AD9463 /* IsAlphabet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221F21E43561100AD9463 /* IsAlphabet.m */; };
+		3C8221F61E43562000AD9463 /* IsAlphaNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221F51E43562000AD9463 /* IsAlphaNumeric.m */; };
+		3C8221F91E43567600AD9463 /* IsValidDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221F81E43567600AD9463 /* IsValidDate.m */; };
+		3C8221FC1E4356A700AD9463 /* IsPositiveInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221FB1E4356A700AD9463 /* IsPositiveInteger.m */; };
+		3C8221FF1E4356CA00AD9463 /* IsValidMonthYear.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221FE1E4356CA00AD9463 /* IsValidMonthYear.m */; };
+		3C8222021E4356E300AD9463 /* IsInRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8222011E4356E300AD9463 /* IsInRange.m */; };
+		3C8222051E4356F100AD9463 /* IsValidLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8222041E4356F100AD9463 /* IsValidLength.m */; };
+		3C8222081E43571200AD9463 /* IsValidAadhaarNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8222071E43571200AD9463 /* IsValidAadhaarNumber.m */; };
+		3C82220B1E43571C00AD9463 /* IsValidPan.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82220A1E43571C00AD9463 /* IsValidPan.m */; };
+		3C82220E1E435C0100AD9463 /* IsValidTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C82220D1E435C0100AD9463 /* IsValidTime.m */; };
+		3C8222131E43676500AD9463 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C8222151E43676500AD9463 /* Localizable.strings */; };
 		3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B61E41BA75007F7666 /* IsEmpty.m */; };
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
 		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
@@ -84,6 +96,33 @@
 		3C8221E81E434CAA00AD9463 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		3C8221EA1E434F5300AD9463 /* erroricon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erroricon1.png; sourceTree = "<group>"; };
 		3C8221EC1E4351C400AD9463 /* login_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_logo.png; sourceTree = "<group>"; };
+		3C8221EE1E4355F500AD9463 /* IsNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsNumber.h; sourceTree = "<group>"; };
+		3C8221EF1E4355F500AD9463 /* IsNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsNumber.m; sourceTree = "<group>"; };
+		3C8221F11E43561100AD9463 /* IsAlphabet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsAlphabet.h; sourceTree = "<group>"; };
+		3C8221F21E43561100AD9463 /* IsAlphabet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsAlphabet.m; sourceTree = "<group>"; };
+		3C8221F41E43562000AD9463 /* IsAlphaNumeric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsAlphaNumeric.h; sourceTree = "<group>"; };
+		3C8221F51E43562000AD9463 /* IsAlphaNumeric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsAlphaNumeric.m; sourceTree = "<group>"; };
+		3C8221F71E43567600AD9463 /* IsValidDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidDate.h; sourceTree = "<group>"; };
+		3C8221F81E43567600AD9463 /* IsValidDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidDate.m; sourceTree = "<group>"; };
+		3C8221FA1E4356A700AD9463 /* IsPositiveInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsPositiveInteger.h; sourceTree = "<group>"; };
+		3C8221FB1E4356A700AD9463 /* IsPositiveInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsPositiveInteger.m; sourceTree = "<group>"; };
+		3C8221FD1E4356CA00AD9463 /* IsValidMonthYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidMonthYear.h; sourceTree = "<group>"; };
+		3C8221FE1E4356CA00AD9463 /* IsValidMonthYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidMonthYear.m; sourceTree = "<group>"; };
+		3C8222001E4356E300AD9463 /* IsInRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsInRange.h; sourceTree = "<group>"; };
+		3C8222011E4356E300AD9463 /* IsInRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsInRange.m; sourceTree = "<group>"; };
+		3C8222031E4356F100AD9463 /* IsValidLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidLength.h; sourceTree = "<group>"; };
+		3C8222041E4356F100AD9463 /* IsValidLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidLength.m; sourceTree = "<group>"; };
+		3C8222061E43571200AD9463 /* IsValidAadhaarNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidAadhaarNumber.h; sourceTree = "<group>"; };
+		3C8222071E43571200AD9463 /* IsValidAadhaarNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidAadhaarNumber.m; sourceTree = "<group>"; };
+		3C8222091E43571C00AD9463 /* IsValidPan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidPan.h; sourceTree = "<group>"; };
+		3C82220A1E43571C00AD9463 /* IsValidPan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidPan.m; sourceTree = "<group>"; };
+		3C82220C1E435C0100AD9463 /* IsValidTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidTime.h; sourceTree = "<group>"; };
+		3C82220D1E435C0100AD9463 /* IsValidTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidTime.m; sourceTree = "<group>"; };
+		3C8222111E43673700AD9463 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3C8222121E43673700AD9463 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3C8222161E43679900AD9463 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C8222171E4367F800AD9463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C8222181E43681800AD9463 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CB843B21E41B005007F7666 /* ValidatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatorInterface.h; sourceTree = "<group>"; };
 		3CB843B51E41BA75007F7666 /* IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsEmpty.h; sourceTree = "<group>"; };
 		3CB843B61E41BA75007F7666 /* IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsEmpty.m; sourceTree = "<group>"; };
@@ -189,6 +228,7 @@
 			children = (
 				09D510091E40F5A0000EBA90 /* IOSFormValidatorUITests.m */,
 				09D5100B1E40F5A0000EBA90 /* Info.plist */,
+				3C8222151E43676500AD9463 /* Localizable.strings */,
 			);
 			path = IOSFormValidatorUITests;
 			sourceTree = "<group>";
@@ -201,6 +241,28 @@
 				3CB843B91E41BA85007F7666 /* IsValidEmail.m */,
 				3CB843B51E41BA75007F7666 /* IsEmpty.h */,
 				3CB843B61E41BA75007F7666 /* IsEmpty.m */,
+				3C8221EE1E4355F500AD9463 /* IsNumber.h */,
+				3C8221EF1E4355F500AD9463 /* IsNumber.m */,
+				3C8221F11E43561100AD9463 /* IsAlphabet.h */,
+				3C8221F21E43561100AD9463 /* IsAlphabet.m */,
+				3C8221F41E43562000AD9463 /* IsAlphaNumeric.h */,
+				3C8221F51E43562000AD9463 /* IsAlphaNumeric.m */,
+				3C8221F71E43567600AD9463 /* IsValidDate.h */,
+				3C8221F81E43567600AD9463 /* IsValidDate.m */,
+				3C8221FA1E4356A700AD9463 /* IsPositiveInteger.h */,
+				3C8221FB1E4356A700AD9463 /* IsPositiveInteger.m */,
+				3C8221FD1E4356CA00AD9463 /* IsValidMonthYear.h */,
+				3C8221FE1E4356CA00AD9463 /* IsValidMonthYear.m */,
+				3C8222001E4356E300AD9463 /* IsInRange.h */,
+				3C8222011E4356E300AD9463 /* IsInRange.m */,
+				3C8222031E4356F100AD9463 /* IsValidLength.h */,
+				3C8222041E4356F100AD9463 /* IsValidLength.m */,
+				3C8222061E43571200AD9463 /* IsValidAadhaarNumber.h */,
+				3C8222071E43571200AD9463 /* IsValidAadhaarNumber.m */,
+				3C8222091E43571C00AD9463 /* IsValidPan.h */,
+				3C82220A1E43571C00AD9463 /* IsValidPan.m */,
+				3C82220C1E435C0100AD9463 /* IsValidTime.h */,
+				3C82220D1E435C0100AD9463 /* IsValidTime.m */,
 			);
 			name = Validators;
 			sourceTree = "<group>";
@@ -340,8 +402,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				fr,
 			);
 			mainGroup = 09D50FD81E40F5A0000EBA90;
 			productRefGroup = 09D50FE21E40F5A0000EBA90 /* Products */;
@@ -368,6 +431,7 @@
 				3C8221EB1E434F5300AD9463 /* erroricon1.png in Resources */,
 				09D50FF11E40F5A0000EBA90 /* Assets.xcassets in Resources */,
 				3C8221ED1E4351C400AD9463 /* login_logo.png in Resources */,
+				3C8222131E43676500AD9463 /* Localizable.strings in Resources */,
 				09D50FEF1E40F5A0000EBA90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,15 +459,26 @@
 			files = (
 				3C8221DC1E43081500AD9463 /* Form.m in Sources */,
 				3C8221D91E43054500AD9463 /* Field.m in Sources */,
+				3C8221FC1E4356A700AD9463 /* IsPositiveInteger.m in Sources */,
 				09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */,
+				3C82220E1E435C0100AD9463 /* IsValidTime.m in Sources */,
 				3C8221D11E42F03000AD9463 /* ErrorButton.m in Sources */,
+				3C8221F31E43561100AD9463 /* IsAlphabet.m in Sources */,
 				3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */,
 				3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */,
+				3C8222051E4356F100AD9463 /* IsValidLength.m in Sources */,
 				3CB843C91E420ADF007F7666 /* ViewWrapper.m in Sources */,
+				3C8221F91E43567600AD9463 /* IsValidDate.m in Sources */,
 				3C8221E11E4334F100AD9463 /* FieldBuilder.m in Sources */,
+				3C8221F01E4355F500AD9463 /* IsNumber.m in Sources */,
+				3C8221FF1E4356CA00AD9463 /* IsValidMonthYear.m in Sources */,
+				3C8222021E4356E300AD9463 /* IsInRange.m in Sources */,
+				3C8222081E43571200AD9463 /* IsValidAadhaarNumber.m in Sources */,
 				3C8221D41E42F08A00AD9463 /* ErrorMessageView.m in Sources */,
 				3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */,
+				3C82220B1E43571C00AD9463 /* IsValidPan.m in Sources */,
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
+				3C8221F61E43562000AD9463 /* IsAlphaNumeric.m in Sources */,
 				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
 				3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */,
 				3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */,
@@ -446,6 +521,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				09D50FEE1E40F5A0000EBA90 /* Base */,
+				3C8222111E43673700AD9463 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -454,8 +530,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				09D50FF31E40F5A0000EBA90 /* Base */,
+				3C8222121E43673700AD9463 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3C8222151E43676500AD9463 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C8222161E43679900AD9463 /* en */,
+				3C8222171E4367F800AD9463 /* Base */,
+				3C8222181E43681800AD9463 /* fr */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -465,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -497,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -534,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -625,7 +715,7 @@
 				09D5100D1E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		09D5100E1E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidator" */ = {
 			isa = XCConfigurationList;
@@ -634,7 +724,7 @@
 				09D510101E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		09D510111E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorTests" */ = {
 			isa = XCConfigurationList;
@@ -643,7 +733,7 @@
 				09D510131E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		09D510141E40F5A0000EBA90 /* Build configuration list for PBXNativeTarget "IOSFormValidatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -652,7 +742,7 @@
 				09D510161E40F5A0000EBA90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
