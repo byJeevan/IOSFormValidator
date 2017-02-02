@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "ViewWrapper.h"
-#import "FieldBuilder.h"
 
-@class FieldBuilder;
 
 @interface Field : NSObject
 
@@ -20,7 +18,7 @@
 @property (nonatomic, strong) UILabel * errorMessageLabel;
 @property (nonatomic, strong) NSArray * validationItemsArray;
 
-+ (instancetype)makeWithBuilder:(void (^)(FieldBuilder *))updateBlock;
+-(instancetype) initWithField:(id)editView errorMessageView:(UILabel *) messageLabel errorHintView:(UIView *) hintView validationsArray:(NSArray *) validationsArray;
 
 -(void) showErrorField:(Field *) field withMessage:(NSString *) message;
 

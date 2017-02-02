@@ -21,6 +21,11 @@
 		3C8221DC1E43081500AD9463 /* Form.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221DB1E43081500AD9463 /* Form.m */; };
 		3C8221DE1E432B1100AD9463 /* error_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221DD1E432B1100AD9463 /* error_default.png */; };
 		3C8221E11E4334F100AD9463 /* FieldBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8221E01E4334F100AD9463 /* FieldBuilder.m */; };
+		3C8221E51E43442100AD9463 /* background_base.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221E41E43442100AD9463 /* background_base.jpg */; };
+		3C8221E71E434B7900AD9463 /* underline.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221E61E434B7900AD9463 /* underline.png */; };
+		3C8221E91E434CAA00AD9463 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221E81E434CAA00AD9463 /* line.png */; };
+		3C8221EB1E434F5300AD9463 /* erroricon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221EA1E434F5300AD9463 /* erroricon1.png */; };
+		3C8221ED1E4351C400AD9463 /* login_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8221EC1E4351C400AD9463 /* login_logo.png */; };
 		3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B61E41BA75007F7666 /* IsEmpty.m */; };
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
 		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
@@ -74,6 +79,11 @@
 		3C8221DD1E432B1100AD9463 /* error_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error_default.png; sourceTree = "<group>"; };
 		3C8221DF1E4334F100AD9463 /* FieldBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldBuilder.h; sourceTree = "<group>"; };
 		3C8221E01E4334F100AD9463 /* FieldBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldBuilder.m; sourceTree = "<group>"; };
+		3C8221E41E43442100AD9463 /* background_base.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_base.jpg; sourceTree = "<group>"; };
+		3C8221E61E434B7900AD9463 /* underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underline.png; sourceTree = "<group>"; };
+		3C8221E81E434CAA00AD9463 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		3C8221EA1E434F5300AD9463 /* erroricon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erroricon1.png; sourceTree = "<group>"; };
+		3C8221EC1E4351C400AD9463 /* login_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_logo.png; sourceTree = "<group>"; };
 		3CB843B21E41B005007F7666 /* ValidatorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatorInterface.h; sourceTree = "<group>"; };
 		3CB843B51E41BA75007F7666 /* IsEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsEmpty.h; sourceTree = "<group>"; };
 		3CB843B61E41BA75007F7666 /* IsEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsEmpty.m; sourceTree = "<group>"; };
@@ -117,15 +127,7 @@
 		09D50FD81E40F5A0000EBA90 = {
 			isa = PBXGroup;
 			children = (
-				3C8221CE1E42F00F00AD9463 /* Error View */,
-				3C8221DF1E4334F100AD9463 /* FieldBuilder.h */,
-				3C8221E01E4334F100AD9463 /* FieldBuilder.m */,
-				3C8221DA1E43081500AD9463 /* Form.h */,
-				3C8221DB1E43081500AD9463 /* Form.m */,
-				3C8221D71E43054500AD9463 /* Field.h */,
-				3C8221D81E43054500AD9463 /* Field.m */,
-				3C8221CC1E42EA8900AD9463 /* View Wrappers */,
-				3C8221CB1E42EA6A00AD9463 /* Validators */,
+				3C8221E31E4342D400AD9463 /* FormValidator Classes */,
 				09D50FE31E40F5A0000EBA90 /* IOSFormValidator */,
 				09D50FFD1E40F5A0000EBA90 /* IOSFormValidatorTests */,
 				09D510081E40F5A0000EBA90 /* IOSFormValidatorUITests */,
@@ -151,6 +153,11 @@
 				09D50FEA1E40F5A0000EBA90 /* ViewController.h */,
 				09D50FEB1E40F5A0000EBA90 /* ViewController.m */,
 				3C8221DD1E432B1100AD9463 /* error_default.png */,
+				3C8221E81E434CAA00AD9463 /* line.png */,
+				3C8221E61E434B7900AD9463 /* underline.png */,
+				3C8221EA1E434F5300AD9463 /* erroricon1.png */,
+				3C8221EC1E4351C400AD9463 /* login_logo.png */,
+				3C8221E41E43442100AD9463 /* background_base.jpg */,
 				09D50FED1E40F5A0000EBA90 /* Main.storyboard */,
 				09D50FF01E40F5A0000EBA90 /* Assets.xcassets */,
 				09D50FF21E40F5A0000EBA90 /* LaunchScreen.storyboard */,
@@ -222,6 +229,30 @@
 				3C8221D31E42F08A00AD9463 /* ErrorMessageView.m */,
 			);
 			name = "Error View";
+			sourceTree = "<group>";
+		};
+		3C8221E21E4342C500AD9463 /* Form Field */ = {
+			isa = PBXGroup;
+			children = (
+				3C8221DF1E4334F100AD9463 /* FieldBuilder.h */,
+				3C8221E01E4334F100AD9463 /* FieldBuilder.m */,
+				3C8221DA1E43081500AD9463 /* Form.h */,
+				3C8221DB1E43081500AD9463 /* Form.m */,
+				3C8221D71E43054500AD9463 /* Field.h */,
+				3C8221D81E43054500AD9463 /* Field.m */,
+			);
+			name = "Form Field";
+			sourceTree = "<group>";
+		};
+		3C8221E31E4342D400AD9463 /* FormValidator Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C8221E21E4342C500AD9463 /* Form Field */,
+				3C8221CE1E42F00F00AD9463 /* Error View */,
+				3C8221CC1E42EA8900AD9463 /* View Wrappers */,
+				3C8221CB1E42EA6A00AD9463 /* Validators */,
+			);
+			name = "FormValidator Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8221E71E434B7900AD9463 /* underline.png in Resources */,
+				3C8221E91E434CAA00AD9463 /* line.png in Resources */,
+				3C8221E51E43442100AD9463 /* background_base.jpg in Resources */,
 				09D50FF41E40F5A0000EBA90 /* LaunchScreen.storyboard in Resources */,
 				3C8221DE1E432B1100AD9463 /* error_default.png in Resources */,
+				3C8221EB1E434F5300AD9463 /* erroricon1.png in Resources */,
 				09D50FF11E40F5A0000EBA90 /* Assets.xcassets in Resources */,
+				3C8221ED1E4351C400AD9463 /* login_logo.png in Resources */,
 				09D50FEF1E40F5A0000EBA90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

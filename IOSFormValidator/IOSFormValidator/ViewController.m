@@ -27,15 +27,21 @@
     [super viewDidLoad];
    
     self.form = [Form new];
-    Field * field = [Field makeWithBuilder:^(FieldBuilder * builder) {
-            builder.field = self.emailField;
-            builder.messageLabel = self.emaildMessageLabel;
-            builder.hintView = self.errorButtonEmail;
-            builder.validationArray = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
-    }];
+    
+//    Field * field = [Field makeWithBuilder:^(FieldBuilder * builder) {
+//            builder.field = self.emailField;
+//            builder.messageLabel = self.emaildMessageLabel;
+//            builder.hintView = self.errorButtonEmail;
+//            builder.validationArray = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
+//    }];
+//
+    
+    NSArray * arrayValidationEmail = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
+    
+    Field * field = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
+    
     [self.form addNewField:field];
- 
-    [self.errorButtonEmail setBackgroundImage:[UIImage imageNamed:@"error_default.png"] forState:UIControlStateNormal];
+
   
 }
 

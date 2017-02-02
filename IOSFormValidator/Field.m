@@ -15,50 +15,24 @@
 
 @implementation Field
 
-- (instancetype)init {
-    FieldBuilder *builder = [FieldBuilder new];
-    return [self initWithBuilder:builder];
-}
 
-+ (instancetype)makeWithBuilder:(void (^)(FieldBuilder *))updateBlock {
-    FieldBuilder *builder = [FieldBuilder new];
-    updateBlock(builder);
-    return [[Field alloc] initWithBuilder:builder];
-}
-
--(instancetype)initWithBuilder:(FieldBuilder *)builder
-{
+-(instancetype) initWithField:(id)editView errorMessageView:(UILabel *) messageLabel errorHintView:(UIView *) hintView validationsArray:(NSArray *) validationsArray {
+    
     self = [super init];
     if (self) {
- 
-        self.viewWrapperField  = [[ViewWrapperFactory new] getViewWrapper: builder.field];
         
-        self.errorMessageLabel = builder.messageLabel;
+        self.viewWrapperField  = [[ViewWrapperFactory new] getViewWrapper:editView];
         
-        self.errorHintView  = builder.hintView;
+        self.errorMessageLabel = messageLabel;
         
-        self.validationItemsArray = [[NSArray alloc] initWithArray: builder.validationArray];
+        self.errorHintView  = hintView;
+        
+        self.validationItemsArray = [[NSArray alloc] initWithArray: validationsArray];
         
         [self initFieldAttributes];
-        
     }
-    
-    return self;
-}
 
-- (FieldBuilder *)makeBuilder {
-    
-    FieldBuilder *builder = [FieldBuilder new];
-    
-    builder.field =     self.viewWrapperField;
-    
-    builder.messageLabel=   self.errorMessageLabel;
-    
-    builder.hintView =  self.errorHintView ;
-    
-    builder.validationArray  =   self.validationItemsArray;
-    
-    return builder;
+    return self;
 }
 
 -(void) initFieldAttributes {
