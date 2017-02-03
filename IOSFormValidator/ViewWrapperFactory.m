@@ -8,7 +8,6 @@
 
 #import "ViewWrapperFactory.h"
 #import "UITextFieldViewWrapper.h"
-#import "UISpinnerViewWrapper.h"
 
 @implementation ViewWrapperFactory
 
@@ -20,7 +19,7 @@
     }
     else  if ([view isKindOfClass:UITextView.class]) {
         
-        return  [[UISpinnerViewWrapper alloc] initWithView:view];
+//        return  [[UISpinnerViewWrapper alloc] initWithView:view];
     }
     
     NSLog(@"ViewWrapper Class not matching !");

@@ -16,7 +16,7 @@
 @implementation Field
 
 
--(instancetype) initWithField:(id)editView errorMessageView:(UILabel *) messageLabel errorHintView:(UIView *) hintView validationsArray:(NSArray *) validationsArray {
+-(instancetype) initWithView:(id)editView errorMessageView:(UILabel *) messageLabel errorHintView:(UIView *) hintView validationsArray:(NSArray *) validationsArray {
     
     self = [super init];
     if (self) {

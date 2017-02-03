@@ -9,12 +9,22 @@
 #import "IsValidDate.h"
 
 @implementation IsValidDate
+
+//optional date validation
 -(BOOL) isValidField:(ViewWrapper *) field{
     
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MM/dd/yyyy"];
     NSDate *date = [dateFormat dateFromString:field.getText];
   
+    
+    //gaurd not mandatory
+    if (field.getText.length < 1) {
+        
+        return YES;
+    }
+    
+    
     //If date and date object is kind of NSDate class, then it must be a date produced by dateFormat.
     if (date!=nil && [date isKindOfClass:[NSDate class]]) {
         return YES;

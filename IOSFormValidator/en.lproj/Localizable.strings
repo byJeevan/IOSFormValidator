@@ -20,5 +20,6 @@
 "invalid.error.aadhaar" = "Aadhaar is not valid";
 "invalid.error.pan" = "Pan is not valid";
 "invalid.error.time" = "Time is not valid";
+"invalid.error.dependency.field" = "Cannot be left empty";
 
 

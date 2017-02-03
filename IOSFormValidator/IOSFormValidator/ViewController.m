@@ -37,7 +37,7 @@
  
     //Form element - email
     NSArray * arrayValidationEmail = [NSArray arrayWithObjects:[IsEmpty new], [IsValidEmail new], nil];
-    Field * fieldEmail = [[Field alloc] initWithField:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
+    Field * fieldEmail = [[Field alloc] initWithView:self.emailField errorMessageView:self.emaildMessageLabel errorHintView:self.errorButtonEmail validationsArray:arrayValidationEmail];
     [self.form addNewField:fieldEmail];
     
     self.emailField.keyboardType = UIKeyboardTypeEmailAddress;
@@ -45,7 +45,7 @@
     
     //Form element - password.
     NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], nil];
-    Field * fieldPassword = [[Field alloc] initWithField:self.passwordField errorMessageView:self.errorPasswordLabel errorHintView:self.errorPassIcon validationsArray:arrayValidationPassword];
+    Field * fieldPassword = [[Field alloc] initWithView:self.passwordField errorMessageView:self.errorPasswordLabel errorHintView:self.errorPassIcon validationsArray:arrayValidationPassword];
     
     [self.form addNewField:fieldPassword];
     

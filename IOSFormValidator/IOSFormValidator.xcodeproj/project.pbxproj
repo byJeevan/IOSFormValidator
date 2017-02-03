@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		099379941E43829100F03622 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099379921E43829100F03622 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		099379951E43829100F03622 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099379931E43829100F03622 /* RegistrationViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		0993799B1E4396FA00F03622 /* close_132.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993799A1E4396FA00F03622 /* close_132.png */; settings = {ASSET_TAGS = (); }; };
-		0993799D1E43984500F03622 /* back-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993799C1E43984500F03622 /* back-red.png */; settings = {ASSET_TAGS = (); }; };
+		099379941E43829100F03622 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099379921E43829100F03622 /* RegistrationViewController.m */; };
+		099379951E43829100F03622 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099379931E43829100F03622 /* RegistrationViewController.xib */; };
+		0993799B1E4396FA00F03622 /* close_132.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993799A1E4396FA00F03622 /* close_132.png */; };
+		0993799D1E43984500F03622 /* back-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0993799C1E43984500F03622 /* back-red.png */; };
 		09D50FE61E40F5A0000EBA90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FE51E40F5A0000EBA90 /* main.m */; };
 		09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FE81E40F5A0000EBA90 /* AppDelegate.m */; };
 		09D50FEC1E40F5A0000EBA90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D50FEB1E40F5A0000EBA90 /* ViewController.m */; };
@@ -45,8 +45,8 @@
 		3CB843BA1E41BA85007F7666 /* IsValidEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843B91E41BA85007F7666 /* IsValidEmail.m */; };
 		3CB843BD1E41E153007F7666 /* ViewWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */; };
 		3CB843C31E41E5B8007F7666 /* UITextFieldViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */; };
-		3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */; };
 		3CB843C91E420ADF007F7666 /* ViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB843C81E420ADF007F7666 /* ViewWrapper.m */; };
+		3CCA99021E444FA900A9BF91 /* IsValidDependencyField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99011E444FA900A9BF91 /* IsValidDependencyField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,10 +139,10 @@
 		3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWrapperFactory.m; sourceTree = "<group>"; };
 		3CB843C11E41E5B8007F7666 /* UITextFieldViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewWrapper.h; sourceTree = "<group>"; };
 		3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldViewWrapper.m; sourceTree = "<group>"; };
-		3CB843C41E4204A0007F7666 /* UISpinnerViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpinnerViewWrapper.h; sourceTree = "<group>"; };
-		3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISpinnerViewWrapper.m; sourceTree = "<group>"; };
 		3CB843C71E420ADF007F7666 /* ViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewWrapper.h; sourceTree = "<group>"; };
 		3CB843C81E420ADF007F7666 /* ViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewWrapper.m; sourceTree = "<group>"; };
+		3CCA99001E444FA900A9BF91 /* IsValidDependencyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsValidDependencyField.h; sourceTree = "<group>"; };
+		3CCA99011E444FA900A9BF91 /* IsValidDependencyField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsValidDependencyField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +263,8 @@
 				3C82220A1E43571C00AD9463 /* IsValidPan.m */,
 				3C82220C1E435C0100AD9463 /* IsValidTime.h */,
 				3C82220D1E435C0100AD9463 /* IsValidTime.m */,
+				3CCA99001E444FA900A9BF91 /* IsValidDependencyField.h */,
+				3CCA99011E444FA900A9BF91 /* IsValidDependencyField.m */,
 			);
 			name = Validators;
 			sourceTree = "<group>";
@@ -274,8 +276,6 @@
 				3CB843BC1E41E153007F7666 /* ViewWrapperFactory.m */,
 				3CB843C71E420ADF007F7666 /* ViewWrapper.h */,
 				3CB843C81E420ADF007F7666 /* ViewWrapper.m */,
-				3CB843C41E4204A0007F7666 /* UISpinnerViewWrapper.h */,
-				3CB843C51E4204A0007F7666 /* UISpinnerViewWrapper.m */,
 				3CB843C11E41E5B8007F7666 /* UITextFieldViewWrapper.h */,
 				3CB843C21E41E5B8007F7666 /* UITextFieldViewWrapper.m */,
 			);
@@ -411,6 +411,7 @@
 				TargetAttributes = {
 					09D50FE01E40F5A0000EBA90 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 77Z62D8Y73;
 					};
 					09D50FF91E40F5A0000EBA90 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -500,6 +501,7 @@
 				099379941E43829100F03622 /* RegistrationViewController.m in Sources */,
 				3C8221F91E43567600AD9463 /* IsValidDate.m in Sources */,
 				3C8221E11E4334F100AD9463 /* FieldBuilder.m in Sources */,
+				3CCA99021E444FA900A9BF91 /* IsValidDependencyField.m in Sources */,
 				3C8221F01E4355F500AD9463 /* IsNumber.m in Sources */,
 				3C8221FF1E4356CA00AD9463 /* IsValidMonthYear.m in Sources */,
 				3C8222021E4356E300AD9463 /* IsInRange.m in Sources */,
@@ -510,7 +512,6 @@
 				09D50FE91E40F5A0000EBA90 /* AppDelegate.m in Sources */,
 				3C8221F61E43562000AD9463 /* IsAlphaNumeric.m in Sources */,
 				09D50FE61E40F5A0000EBA90 /* main.m in Sources */,
-				3CB843C61E4204A0007F7666 /* UISpinnerViewWrapper.m in Sources */,
 				3CB843B71E41BA75007F7666 /* IsEmpty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -679,6 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSFormValidator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

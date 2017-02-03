@@ -42,38 +42,68 @@
             //Set error message field
             ViewWrapper * wrapper = field.viewWrapperField;
             
-            //loop for IsEmpty  / IsValidEmail class  objects in the array.
-            for (NSObject<Validator> *fieldValidationItem in field.validationItemsArray)
-            {
-         
-                if (![fieldValidationItem isValidField:wrapper]) {
+            if (!wrapper.isHidden) { //Skip validation if hidden field.
+                
+                //loop for IsEmpty  / IsValidEmail class  objects in the array.
+                for (NSObject<Validator> *fieldValidationItem in field.validationItemsArray)
+                {
                     
-                    NSLog(@"Field  INvalid: %@ \n Error item: %@ ", field, fieldValidationItem);
-                    
-                    
-                    if (isAllElementsValid) { //Invalid call back - trap for first field to focus
+                    //For dependency field
+                    if ([fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
                         
-                        [wrapper focusToView];
+                        if ([fieldValidationItem isValidField:wrapper]) {
+                            
+                            //If yes -
+                            [field hideErrorField:field];
+                            
+                            break;
+                        }
+                        else{
+                            //if no -
+                            NSLog(@"%@ is not valid ", fieldValidationItem);
+                        }
+                        
                     }
                     
-                    isAllElementsValid = NO;
+                    if ([fieldValidationItem isValidField:wrapper]) {
+                        
+                        //Valid field block
+                        NSLog(@"Field  Valid: %@ ", field);
+                        
+                        [field hideErrorField:field];
+                        
+                    }
+                    else{
+                        
+                        NSLog(@"Field  INvalid: %@ \n Error item: %@ ", field, fieldValidationItem);
+                        
+                        if (isAllElementsValid) { //Invalid call back - trap for first field to focus
+                            
+                            [wrapper focusToView];
+                            
+                            if (![fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
+                                
+                                isAllElementsValid = NO;
+                            }
+                            
+                        }
+                        
+                        [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapper]];
+                        
+                        //Invalid field block
+                        if (![fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
+                            
+                            break;
+                        }
+                        
+                    }
                     
-                    [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapper]];
-                    
-                     break;
                 }
-                else{
-                    
-                    NSLog(@"Field  Valid: %@ ", field);
-                    
-                    [field hideErrorField:field];
-                    
-                }
-                
+                //For loop end - validationItemsArray
             }
         }
     }
-
+    
     
     return isAllElementsValid;
 }

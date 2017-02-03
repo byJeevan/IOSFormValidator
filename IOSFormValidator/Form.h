@@ -15,6 +15,7 @@
 #import "IsValidLength.h"
 #import "IsNumber.h"
 #import "IsAlphabet.h"
+#import "IsValidDependencyField.h"
 
 @interface Form : NSObject
 

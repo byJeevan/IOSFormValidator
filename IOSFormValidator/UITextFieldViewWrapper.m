@@ -17,18 +17,12 @@
 @implementation UITextFieldViewWrapper
 
 -(instancetype) initWithView:(UIView *) view {
-    
     self = [super init];
-    
     if (self) {
-        
         self.textField  = (UITextField *) view;
-        
     }
-    
     return self;
 }
-
 
 -(NSString *) getText {
     return self.textField.text;
@@ -41,6 +35,11 @@
 -(void) focusToView {
     
     [self.textField becomeFirstResponder];
+}
+
+-(void) metaDataDictionary:(NSDictionary *) metaDataDictionary {
+    
+    
 }
 
 @end
