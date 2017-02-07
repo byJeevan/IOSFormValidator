@@ -85,16 +85,15 @@
     
     
     NSArray * arrayValidationStartDate = [NSArray arrayWithObjects:[IsValidDate new], nil];
-    Field * fieldStartDate = [[Field alloc] initWithView:self.startDateField errorMessageView:_dateErrorMessage errorHintView:_dateErrorIcon validationsArray:arrayValidationStartDate];
-    [self.form addNewField:fieldStartDate];
-    
-    NSArray * arrayValidationEndDate = [NSArray arrayWithObjects:[[IsValidDependencyField alloc] initWithFirstField:fieldStartDate], [IsValidDate new], nil];
+    Field * fieldStartDate = [[Field alloc] initWithView:self.startDateField errorMessageView:self.dateErrorMessage errorHintView:self.dateErrorIcon validationsArray:arrayValidationStartDate];
+
+    NSArray * arrayValidationEndDate = [NSArray arrayWithObjects: [IsEmpty new], [IsValidDate new], nil];
     Field * fieldEndDate = [[Field alloc] initWithView:self.endDateField errorMessageView:self.dateErrorMessage errorHintView:self.dateErrorIcon validationsArray:arrayValidationEndDate];
     
-    [self.form addNewField:fieldEndDate];
+    [self.form addNewField:fieldEndDate withDependencyField:fieldStartDate];
     
     //Form Birthdate
-    NSArray * arrayOfBithDateValidation = [NSArray arrayWithObjects:[IsEmpty new],  nil];
+    NSArray * arrayOfBithDateValidation = [NSArray arrayWithObjects:[IsEmpty new], [IsValidDate new], nil];
     Field * birthdateField= [[Field alloc] initWithView:self.birthDateField errorMessageView:self.birthdateErrorLabel errorHintView:self.birthdateErrorIcon validationsArray:arrayOfBithDateValidation];
     [self.form addNewField:birthdateField];
     
@@ -103,20 +102,18 @@
     Field * fieldEmail = [[Field alloc] initWithView:self.emailField errorMessageView:self.emailErrorLabel errorHintView:self.emailErrorIcon validationsArray:arrayValidationEmail];
     [self.form addNewField:fieldEmail];
     
-    //Form element - password.
-    NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], nil];
-    Field * fieldPassword = [[Field alloc] initWithView:self.passwordField errorMessageView:self.passwordErrorLabel errorHintView:self.passwordErrorIcon validationsArray:arrayValidationPassword];
-    
-    [self.form addNewField:fieldPassword];
-    
     //Form field - Mobile
     NSArray * arrayValidationMobile = [NSArray arrayWithObjects:[IsEmpty new], [IsNumber new], nil];
     Field * fieldMobile = [[Field alloc] initWithView:self.mobileField errorMessageView:self.mobileErrorLabel errorHintView:self.mobileErrorIcon validationsArray:arrayValidationMobile];
     
     [self.form addNewField:fieldMobile];
     
-
-         
+    //Form element - password.
+    NSArray * arrayValidationPassword = [NSArray arrayWithObjects:[IsEmpty new], nil];
+    Field * fieldPassword = [[Field alloc] initWithView:self.passwordField errorMessageView:self.passwordErrorLabel errorHintView:self.passwordErrorIcon validationsArray:arrayValidationPassword];
+    
+    [self.form addNewField:fieldPassword];
+    
     //Form field - Picker
     [self addPickerView];
     
@@ -200,9 +197,5 @@
         //[self dateChanged:nil];
     }
 }
-
-
-//cuurncy
-//
 
 @end

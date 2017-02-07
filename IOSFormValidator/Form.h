@@ -15,13 +15,14 @@
 #import "IsValidLength.h"
 #import "IsNumber.h"
 #import "IsAlphabet.h"
-#import "IsValidDependencyField.h"
 
 @interface Form : NSObject
 
 @property (nonatomic,strong) NSMutableArray * fields;
 
 -(void) addNewField:(Field *) field;
+
+-(void) addNewField:(Field *)field withDependencyField:(Field *) dependencyField;
 
 -(BOOL) isFormValid;
 

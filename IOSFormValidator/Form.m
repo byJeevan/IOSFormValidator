@@ -9,6 +9,7 @@
 #import "Form.h"
 #import "ValidatorInterface.h"
 #import "ViewWrapperFactory.h"
+#import "Fields.h"
 
 @implementation Form
 
@@ -17,6 +18,7 @@
     self = [super init];
     
     if (self) {
+        
         self.fields = [NSMutableArray new];
     }
     return self;
@@ -24,89 +26,101 @@
 
 
 -(void) addNewField:(Field *) field {
-    [self.fields addObject:field];
+    
+    [self.fields addObject:[[Fields new] initWithField:field andDependenctyField:nil]];
+    
+}
+
+-(void) addNewField:(Field *)field withDependencyField:(Field *) dependencyField{
+    
+    [self.fields addObject:[[Fields new] initWithField:field andDependenctyField:dependencyField]];
 }
 
 
 -(BOOL) isFormValid {
     
-    BOOL isAllElementsValid = YES;
+    BOOL isAllFieldsValid = NO;
+    BOOL isErroFieldFound = NO;
     
-    //Loop through every fields in the form view,
-    for (Field *field in self.fields)
-    {
-        NSLog(@"We got field : %@ from fields arrray \n", field);
+    //Loop via every Fields object array
+    for (Fields *fieldsObject in self.fields) {
         
-        if ([field isKindOfClass:Field.class]) {
+        NSLog(@"We got first field : %@ \n Second : %@\n", fieldsObject.firstField, fieldsObject.dependencyField);
+        
+        ViewWrapper * wrapperDependencyField = fieldsObject.dependencyField.viewWrapperField;
+        ViewWrapper * wrapperFirstField = fieldsObject.firstField.viewWrapperField;
+        
+        //Reset fields error views
+        [fieldsObject.firstField hideErrorField:fieldsObject.firstField];
+        [fieldsObject.dependencyField hideErrorField:fieldsObject.dependencyField];
+        
+        
+        //Case 1 - If No dependency field, then validate first field
+        
+        if (wrapperDependencyField == nil) {
             
-            //Set error message field
-            ViewWrapper * wrapper = field.viewWrapperField;
+            isAllFieldsValid = [self isValidField:fieldsObject.firstField];
             
-            if (!wrapper.isHidden) { //Skip validation if hidden field.
+        }
+        
+        
+        //Case 2 - If dependency field, validate it followed by first field only if valid.
+        
+        if (wrapperDependencyField.getText.length > 0) {
+            
+            isAllFieldsValid = [self isValidField:fieldsObject.dependencyField];
+            
+            if (isAllFieldsValid) { //if df valid then, only validate first field.
                 
-                //loop for IsEmpty  / IsValidEmail class  objects in the array.
-                for (NSObject<Validator> *fieldValidationItem in field.validationItemsArray)
-                {
-                    
-                    //For dependency field
-                    if ([fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
-                        
-                        if ([fieldValidationItem isValidField:wrapper]) {
-                            
-                            //If yes -
-                            [field hideErrorField:field];
-                            
-                            break;
-                        }
-                        else{
-                            //if no -
-                            NSLog(@"%@ is not valid ", fieldValidationItem);
-                        }
-                        
-                    }
-                    
-                    if ([fieldValidationItem isValidField:wrapper]) {
-                        
-                        //Valid field block
-                        NSLog(@"Field  Valid: %@ ", field);
-                        
-                        [field hideErrorField:field];
-                        
-                    }
-                    else{
-                        
-                        NSLog(@"Field  INvalid: %@ \n Error item: %@ ", field, fieldValidationItem);
-                        
-                        if (isAllElementsValid) { //Invalid call back - trap for first field to focus
-                            
-                            [wrapper focusToView];
-                            
-                            if (![fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
-                                
-                                isAllElementsValid = NO;
-                            }
-                            
-                        }
-                        
-                        [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapper]];
-                        
-                        //Invalid field block
-                        if (![fieldValidationItem isKindOfClass:IsValidDependencyField.class]) {
-                            
-                            break;
-                        }
-                        
-                    }
-                    
-                }
-                //For loop end - validationItemsArray
+                isAllFieldsValid = [self isValidField:fieldsObject.firstField];
+                
             }
+            
+        }
+        
+        //To focus on first error field order.
+        if (!isAllFieldsValid && !isErroFieldFound) {
+            isErroFieldFound = YES;
+            
+            [wrapperFirstField focusToView];
+            
+            if (wrapperDependencyField.getText.length > 0) {
+                
+                
+                [wrapperDependencyField focusToView];
+                
+            }
+        }
+        
+        
+    } //For end - Fields array
+    
+    return isAllFieldsValid;
+}
+
+
+-(BOOL) isValidField:(Field *) field {
+    
+    ViewWrapper * wrapperField = field.viewWrapperField;
+    
+    if (wrapperField.isHidden) {
+        
+        return YES;
+    }
+    
+    //loop for IsEmpty  / IsValidEmail class  objects in the array.
+    for (NSObject<Validator> *fieldValidationItem in field.validationItemsArray) {
+        
+        if (![fieldValidationItem isValidField:wrapperField]) {
+            
+            NSLog(@"Field invalidated  %@ \n on Error item: %@ ", field, fieldValidationItem);
+            
+            [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapperField]];
+            return NO;
         }
     }
     
-    
-    return isAllElementsValid;
+    return YES;
 }
-
 
 @end

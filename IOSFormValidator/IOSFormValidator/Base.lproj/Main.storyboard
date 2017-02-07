@@ -19,7 +19,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" id="jdC-tT-NOa">
-                                <rect key="frame" x="12" y="426.99999984260648" width="297" height="40"/>
+                                <rect key="frame" x="12" y="426.99999916798163" width="297" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.84514552350000005" green="0.72496289010000003" blue="0.83747005460000001" alpha="0.29030172409999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
