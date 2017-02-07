@@ -60,11 +60,20 @@
       }
 }
 
+
 -(void) showErrorField:(Field *) field withMessage:(NSString *) message{
     
+    [self showErrorField:field withMessage:message makeMessageVisible:NO];
+    
+}
+
+-(void) showErrorField:(Field *) field withMessage:(NSString *) message makeMessageVisible:(BOOL) messageVisibleFlag {
+    
     self.errorHintView.hidden = NO;
+    self.errorMessageLabel.hidden = messageVisibleFlag;
     self.errorMessageLabel.text = message;
 }
+
 
 -(void) hideErrorField:(Field *) field {
     

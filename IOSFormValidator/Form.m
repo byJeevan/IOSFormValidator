@@ -40,7 +40,7 @@
 -(BOOL) isFormValid {
     
     BOOL isAllFieldsValid = NO;
-    BOOL isErroFieldFound = NO;
+    BOOL isErrorFieldFound = NO;
     
     //Loop via every Fields object array
     for (Fields *fieldsObject in self.fields) {
@@ -79,8 +79,8 @@
         }
         
         //To focus on first error field order.
-        if (!isAllFieldsValid && !isErroFieldFound) {
-            isErroFieldFound = YES;
+        if (!isAllFieldsValid && !isErrorFieldFound) {
+            isErrorFieldFound = YES;
             
             [wrapperFirstField focusToView];
             
@@ -95,7 +95,7 @@
         
     } //For end - Fields array
     
-    return isAllFieldsValid;
+    return !isErrorFieldFound;
 }
 
 
@@ -115,7 +115,7 @@
             
             NSLog(@"Field invalidated  %@ \n on Error item: %@ ", field, fieldValidationItem);
             
-            [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapperField]];
+            [field showErrorField:field withMessage:[fieldValidationItem getErrorMessage:wrapperField] makeMessageVisible:self.errorMessageDefaultHidden];
             return NO;
         }
     }

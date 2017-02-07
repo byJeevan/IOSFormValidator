@@ -72,6 +72,7 @@
     
     //Create new form
     self.form = [Form new];
+    self.form.errorMessageDefaultHidden = YES;
     
     //Form element - FirstName
     NSArray * arrayValidationFirstName = [NSArray arrayWithObjects:[IsEmpty new], [IsAlphabet new], nil];

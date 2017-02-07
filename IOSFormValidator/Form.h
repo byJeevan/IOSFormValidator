@@ -20,6 +20,8 @@
 
 @property (nonatomic,strong) NSMutableArray * fields;
 
+@property (assign) BOOL errorMessageDefaultHidden;
+
 -(void) addNewField:(Field *) field;
 
 -(void) addNewField:(Field *)field withDependencyField:(Field *) dependencyField;
